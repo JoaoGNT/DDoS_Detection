@@ -1,20 +1,23 @@
-from csvReader import csvReader
+import fwdPktEntropy
+import bckPktEntropy
+import fwdBytesEntropy
+import bckBytesEntropy
 
+# print(fwdPktEntropy.totalPacketsFwdEntropyVec[0:15])
+# print(bckPktEntropy.totalPacketsBckEntropyVec[0:15])
+# print(fwdBytesEntropy.totalBytesFwdEntropyVec[0:15])
+# print(bckBytesEntropy.totalBytesBckEntropyVec[0:15])
+#
+# print(len(fwdPktEntropy.totalPacketsFwdEntropyVec))
+# print(len(bckPktEntropy.totalPacketsBckEntropyVec))
+# print(len(fwdBytesEntropy.totalBytesFwdEntropyVec))
+# print(len(bckBytesEntropy.totalBytesBckEntropyVec))
 
-class fsdFeatures():
+avgVec = []
 
-    window = 5 *60* 10^6
-    time = 0
+for c in range(0,len(fwdPktEntropy.totalPacketsFwdEntropyVec)):
+    avgEntropy = (fwdPktEntropy.totalPacketsFwdEntropyVec[c] + bckPktEntropy.totalPacketsBckEntropyVec[c]
+                  + fwdBytesEntropy.totalBytesFwdEntropyVec[c] + bckBytesEntropy.totalBytesBckEntropyVec[c])/4
+    avgVec.append(avgEntropy)
 
-    for line in range (0,len(csvReader.data)):
-
-        time = time + csvReader.data[line][5]
-  #          for t in range(0,):
-
-
-    print(time)
-
-
-
-pass
 

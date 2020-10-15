@@ -1,45 +1,81 @@
 import csv
-
-class csvReader():
-    file = 'C:/Users/Windows 10/Documents/Dataset TCC/Datasets/UNB CICIDS2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
-    destPort = []
-    numLines = 0
-    counter = 1
-    counter2 = 0
-    normalData = []
-
-    with open(file,'r') as csvfile:
-        reader = csv.reader(csvfile)
-        #next(reader)
-        for row in reader:
-            numLines=numLines+1
-            dp = row
-            destPort.append(dp)
-
-    lenFlow = len(destPort[0])
-    print('Quantidade de atributos: ',lenFlow)
-    print('Número de linhas/fluxos: ',numLines)
+import ipaddress
+from scipy.stats import entropy
+from collections import Counter
 
 
-    for counter in range(1,numLines):
-        flow = destPort[counter]
-        normalFlow = []
-        for counter2 in range(0,lenFlow-1):
-            flow[counter2] = float(flow[counter2])
-            normalFlow.append(flow[counter2])
-            normalData.append(normalFlow)
+file = 'C:/Users/Windows 10/Documents/Dataset TCC/Datasets/UNB CICIDS2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
+flow = []
+numLines = 0
+convertedFlow = []
+d = []
+data = []
+with open(file, 'r') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        del row[6]
+        del row[0]
 
-pass
 
-lengthTrain = round(csvReader.lenFlow*(2/3))
-class trainData():
-    trainData = []
-    for i in range(0,lengthTrain):
-        trainData.append(csvReader.normalData[i])
-pass
+        flow.append(row)
 
-class testData():
-    testData = []
-    for i in range(lengthTrain+1,csvReader.lenFlow):
-        testData.append(csvReader.normalData[i])
-    pass
+flow = flow[0:15]
+numAttributes = len(flow[0])
+numLines = len(flow)
+
+for a in range(1, numLines):
+    flow[a][0] = int(ipaddress.ip_address(flow[a][0]))
+    flow[a][2] = int(ipaddress.ip_address(flow[a][2]))
+
+    if flow[a][numAttributes - 1] == 'BENIGN':
+        flow[a][numAttributes - 1] = -1
+    else:
+        flow[a][numAttributes - 1] = 1
+
+    for b in range(1, numAttributes - 1):
+        flow[a][b] = float(flow[a][b])
+
+data = flow[1:numLines]
+
+print('Dados: ',data)
+
+totalPacketsFwd = []
+window = 5
+tempo = []
+time = 0
+totalPacketsFwdProbability = []
+totalPacketsFwdEntropyVec= []
+counts = 0
+total = 0
+for line in range(0, len(data)):
+    totalPacketsFwd.append(data[line][6])
+    tempo.append(data[line][5])
+print('Pacotes Foward: ',totalPacketsFwd)
+print('Duração do fluxo (s): ',tempo)
+Lista = []
+for line in range (0,len(data)):
+
+    time = time + data[line][5]
+
+    if time >= window:
+        counts = Counter(totalPacketsFwd)
+        print(counts)
+        print(counts.items())
+        total = sum(list(counts.values()))
+        probability_mass = {k: v/total for k, v in counts.items()}
+        probabilityList = list(probability_mass.values())
+        Lista.append(probabilityList)
+        totalPacketsFwdEntropy = entropy(probabilityList)
+        totalPacketsFwdEntropyVec.append(totalPacketsFwdEntropy)
+        time = 0
+        counts = 0
+        total = 0
+
+
+
+# print(totalPacketsFwd)
+# print(probabilityList)
+# print(Lista)
+# print(time)
+# print(totalPacketsFwdEntropyVec)
+
