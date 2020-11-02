@@ -2,40 +2,36 @@ from scipy.stats import entropy
 from collections import Counter
 import csvReader
 
-totalPacketsFwd = []
-w = 5*(10**6)
-time = 0
-counts = 0
-total = 0
-# for line in range(0, len(csvReader.data)):
-#     totalPacketsFwd.append(csvReader.data[line][6])
-#     t.append(csvReader.data[line][5])
-#print('Pacotes Foward: ',totalPacketsFwd)
-#print('Duração do fluxo (s): ',tempo)
-
+w = 5
 window = []
 vectorWindow = []
-for line in range (0,len(csvReader.data)):
-
-    time = time + csvReader.data[line][5]
-    window.append(csvReader.data[line][6])
-    if time >= w:
+d0 = csvReader.dateVector[0]
+for time in range(0,len(csvReader.dateVector)):
+    window.append(csvReader.data[time][6])
+    if (csvReader.dateVector[time].hour == d0.hour):
+        if (csvReader.dateVector[time].minute - d0.minute == 5):
+            vectorWindow.append(window)
+            d0 = csvReader.dateVector[time]
+            window = []
+    else:
         vectorWindow.append(window)
-        time = 0
-        counts = 0
-        total = 0
+        d0 = csvReader.dateVector[time]
         window = []
-length = 0
+
+length =0
 for r in range (0,len(vectorWindow)):
     length = len(vectorWindow[r]) + length
 
+lastWindowVector= []
 if length != len(csvReader.data):
     for l in range(0, len(csvReader.data)):
         lastWindow = csvReader.data[length:len(csvReader.data)]
 
     for q in range(0, len(lastWindow)):
         last_attributes = lastWindow[q][6]
-        vectorWindow.append([last_attributes])
+        lastWindowVector.append(last_attributes)
+vectorWindow.append(lastWindowVector)
+
 
 totalPacketsFwdProbability = []
 totalPacketsFwdEntropyVec= []
@@ -60,9 +56,9 @@ for m in range (0,len(probabilityList)):
    else:
         totalPacketsFwdEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
         totalPacketsFwdEntropyVec.append(totalPacketsFwdEntropy)
-# print(len(totalPacketsFwdEntropyVec))
+
+print(totalPacketsFwdEntropyVec)
+print(len(totalPacketsFwdEntropyVec))
 # print(len(csvReader.data))
 # print(w)
-
-
 

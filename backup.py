@@ -1,81 +1,60 @@
-import csv
-import ipaddress
-from scipy.stats import entropy
-from collections import Counter
+import datetime
 
 
-file = 'C:/Users/Windows 10/Documents/Dataset TCC/Datasets/UNB CICIDS2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
-flow = []
-numLines = 0
-convertedFlow = []
-d = []
-data = []
-with open(file, 'r') as csvfile:
-    reader = csv.reader(csvfile)
-    for row in reader:
-        del row[6]
-        del row[0]
 
+dateVector = [datetime.datetime(year=2017,month=7,day=7,hour=3,minute=50,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=51,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=52,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=53,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=54,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=55,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=56,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=57,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=58,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=3,minute=59,second=0),
+datetime.datetime(year=2017,month=7,day=7,hour=4,minute=0,second=0),
+datetime.datetime(year=2017, month=7, day=7, hour=4, minute=1, second=0),
+datetime.datetime(year=2017, month=7, day=7, hour=4, minute=2, second=0),
+datetime.datetime(year=2017, month=7, day=7, hour=4, minute=3, second=0),
+datetime.datetime(year=2017, month=7, day=7, hour=4, minute=4, second=0),
+datetime.datetime(year=2017, month=7, day=7, hour=4, minute=5, second=0),
+datetime.datetime(year=2017, month=7, day=7, hour=4, minute=6, second=0)]
 
-        flow.append(row)
+print(len(dateVector))
+data= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 
-flow = flow[0:15]
-numAttributes = len(flow[0])
-numLines = len(flow)
+print(type(dateVector[0].hour))
+# print(dateVector[0].minute)
+window = []
+vectorWindow =[]
+d0 = dateVector[0]
+print(d0.hour)
+w = 5
+for c in range(0,len(dateVector)):
+    window.append(data[c])
 
-for a in range(1, numLines):
-    flow[a][0] = int(ipaddress.ip_address(flow[a][0]))
-    flow[a][2] = int(ipaddress.ip_address(flow[a][2]))
-
-    if flow[a][numAttributes - 1] == 'BENIGN':
-        flow[a][numAttributes - 1] = -1
+    if (dateVector[c].hour == d0.hour):
+        if (dateVector[c].minute - d0.minute == 5):
+            vectorWindow.append(window)
+            d0 = dateVector[c]
+            window = []
     else:
-        flow[a][numAttributes - 1] = 1
+        vectorWindow.append(window)
+        d0 = dateVector[c]
+        window = []
+length = 0
+for r in range (0,len(vectorWindow)):
+    length = len(vectorWindow[r]) + length
 
-    for b in range(1, numAttributes - 1):
-        flow[a][b] = float(flow[a][b])
+lastWindowVector= []
+if length != len(data):
+    for l in range(0, len(data)):
+        lastWindow = data[length:len(data)]
 
-data = flow[1:numLines]
+    for q in range(0, len(lastWindow)):
+        last_attributes = lastWindow[q]
+        lastWindowVector.append(last_attributes)
+vectorWindow.append(lastWindowVector)
+print(vectorWindow)
 
-print('Dados: ',data)
-
-totalPacketsFwd = []
-window = 5
-tempo = []
-time = 0
-totalPacketsFwdProbability = []
-totalPacketsFwdEntropyVec= []
-counts = 0
-total = 0
-for line in range(0, len(data)):
-    totalPacketsFwd.append(data[line][6])
-    tempo.append(data[line][5])
-print('Pacotes Foward: ',totalPacketsFwd)
-print('Duração do fluxo (s): ',tempo)
-Lista = []
-for line in range (0,len(data)):
-
-    time = time + data[line][5]
-
-    if time >= window:
-        counts = Counter(totalPacketsFwd)
-        print(counts)
-        print(counts.items())
-        total = sum(list(counts.values()))
-        probability_mass = {k: v/total for k, v in counts.items()}
-        probabilityList = list(probability_mass.values())
-        Lista.append(probabilityList)
-        totalPacketsFwdEntropy = entropy(probabilityList)
-        totalPacketsFwdEntropyVec.append(totalPacketsFwdEntropy)
-        time = 0
-        counts = 0
-        total = 0
-
-
-
-# print(totalPacketsFwd)
-# print(probabilityList)
-# print(Lista)
-# print(time)
-# print(totalPacketsFwdEntropyVec)
-
+print(length)
