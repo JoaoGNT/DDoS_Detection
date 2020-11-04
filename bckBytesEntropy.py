@@ -5,13 +5,19 @@ import csvReader
 w = 5
 window = []
 vectorWindow = []
-
+d0 = csvReader.dateVector[0]
 for time in range(0,len(csvReader.dateVector)):
     window.append(csvReader.data[time][9])
-    if (csvReader.dateVector[time].minute - csvReader.d0 == 5):
+    if (csvReader.dateVector[time].hour == d0.hour):
+        if (csvReader.dateVector[time].minute - d0.minute == 5):
+            vectorWindow.append(window)
+            d0 = csvReader.dateVector[time]
+            window = []
+    else:
         vectorWindow.append(window)
-        d0 = csvReader.dateVector[time].minute
+        d0 = csvReader.dateVector[time]
         window = []
+
 length =0
 for r in range (0,len(vectorWindow)):
     length = len(vectorWindow[r]) + length

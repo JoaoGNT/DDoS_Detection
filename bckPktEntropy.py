@@ -7,7 +7,7 @@ window = []
 vectorWindow = []
 d0 = csvReader.dateVector[0]
 for time in range(0,len(csvReader.dateVector)):
-    window.append(csvReader.data[time][6])
+    window.append(csvReader.data[time][7])
     if (csvReader.dateVector[time].hour == d0.hour):
         if (csvReader.dateVector[time].minute - d0.minute == 5):
             vectorWindow.append(window)
@@ -28,10 +28,9 @@ if length != len(csvReader.data):
         lastWindow = csvReader.data[length:len(csvReader.data)]
 
     for q in range(0, len(lastWindow)):
-        last_attributes = lastWindow[q][6]
+        last_attributes = lastWindow[q][7]
         lastWindowVector.append(last_attributes)
 vectorWindow.append(lastWindowVector)
-
 
 
 totalPacketsBckEntropy = []

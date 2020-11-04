@@ -57,8 +57,8 @@ for m in range (0,len(probabilityList)):
         totalPacketsFwdEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
         totalPacketsFwdEntropyVec.append(totalPacketsFwdEntropy)
 
-print(totalPacketsFwdEntropyVec)
-print(len(totalPacketsFwdEntropyVec))
+# print(totalPacketsFwdEntropyVec)
+# print(len(totalPacketsFwdEntropyVec))
 # print(len(csvReader.data))
 # print(w)
 
