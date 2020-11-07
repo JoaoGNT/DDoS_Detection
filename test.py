@@ -1,5 +1,9 @@
-import datetime
-from datetime import datetime
+import numpy as np
 
-a = datetime.strptime('7/7/2017 5:02','%d/%m/%Y %H:%M')
-print(a)
+a = [1, 2, 3, 4, 5]
+b = [6, 7, 8, 9, 10]
+var = np.var(a)
+print(var)
+# for k in range(0, len(a)):
+#     var = np.var(a[k]-b[k])
+#     print(var)
