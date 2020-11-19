@@ -1,44 +1,46 @@
 from scipy.stats import entropy
 from collections import Counter
 import csvReader
+import datetime
 
-w = 5
+def lista_simples(lista):
+    if isinstance(lista, list):
+        return [sub_elem for elem in lista for sub_elem in lista_simples(elem)]
+    else:
+        return [lista]
+
+t = 1 #minutes
 window = []
-vectorWindow = []
+minuteVecWindow = []
 d0 = csvReader.dateVector[0]
 for time in range(0,len(csvReader.dateVector)):
     window.append(csvReader.data[time][9])
-    if (csvReader.dateVector[time].hour == d0.hour):
-        if (csvReader.dateVector[time].minute - d0.minute == 5):
-            vectorWindow.append(window)
-            d0 = csvReader.dateVector[time]
-            window = []
-    else:
-        vectorWindow.append(window)
+    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == t):
+        minuteVecWindow.append(window)
         d0 = csvReader.dateVector[time]
         window = []
+vector =[]
+for t in range(5,len(minuteVecWindow)):
+    vec = minuteVecWindow[t-5:t+1]
+    vector.append(lista_simples(vec))
 
-length =0
-for r in range (0,len(vectorWindow)):
-    length = len(vectorWindow[r]) + length
+twindow = csvReader.dateVector[0] + datetime.timedelta(minutes=5)
+dateVec = []
+dateVec.append(twindow)
 
-lastWindowVector= []
-if length != len(csvReader.data):
-    for l in range(0, len(csvReader.data)):
-        lastWindow = csvReader.data[length:len(csvReader.data)]
-
-    for q in range(0, len(lastWindow)):
-        last_attributes = lastWindow[q][9]
-        lastWindowVector.append(last_attributes)
-vectorWindow.append(lastWindowVector)
+# print(vector[2][0][0])
+# print(len(vector[2][0]))
+# print(type(vector[2][0]))
 
 
+
+totalBytesBckEntropy = []
 totalBytesBckEntropyVec= []
 probabilityList = []
 diffValuesVec = []
 #print(vectorWindow)
-for a in range(0,len(vectorWindow)):
-    counts = Counter(vectorWindow[a])
+for a in range(0,len(vector)):
+    counts = Counter(vector[a])
     # print(counts)
     # print(counts.items())
     total = sum(list(counts.values()))
@@ -56,7 +58,4 @@ for m in range (0,len(probabilityList)):
         totalBytesBckEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
         totalBytesBckEntropyVec.append(totalBytesBckEntropy)
 
-# print(vectorWindow[0])
-# print(len(totalBytesBckEntropyVec))
-# print(len(csvReader.data))
-# print(w)
+# print(totalBytesBckEntropyVec)
