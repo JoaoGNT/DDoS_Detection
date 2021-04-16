@@ -19,16 +19,16 @@ def lista_simples(lista):
     else:
         return [lista]
 
-t = 1 #sliding window
+delta = 1 #sliding window
 wSize = 5 #window size
 window = [] #window vector
 minuteVecWindow = []
 d0 = csvReader.dateVector[0] #first date data
-BckBytesIndex = 9 #backward bytes index
+BckBytesIndex = 9 #backward bytes index -- 2017
 
 for time in range(0,len(csvReader.dateVector)):
     window.append(csvReader.data[time][BckBytesIndex])
-    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == t):
+    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
         minuteVecWindow.append(window)
         d0 = csvReader.dateVector[time]
         window = []
@@ -73,7 +73,7 @@ for m in range (0,len(probabilityList)):
         totalBytesBckEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
         totalBytesBckEntropyVec.append(totalBytesBckEntropy)
 
-print(len(totalBytesBckEntropyVec))
-print(len(vector))
+# print(len(totalBytesBckEntropyVec))
+# print(len(vector))
 
 #-------------------------------- END STEP 2 -----------------------------------------#

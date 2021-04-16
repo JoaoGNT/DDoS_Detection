@@ -13,7 +13,8 @@ from datetime import datetime
     *Both vectors are organized in the same way 
 '''
 
-file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
+#file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
+file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2019/01-12/DrDoS_DNS.csv' #2019
 flow = [] # vector to append data form the data base -- deleting rows 0 and 6 (flow ID and timestamp,respictively)
 numLines = 0 # initializing a counter number of lines for vector flow
 dateVector = [] # vector with the timestamp for each flow
@@ -21,8 +22,11 @@ with open(file,'r') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         dateVector.append(row[6])
-        del row[6]
-        del row[0]
+        #del row[6] #2017
+        #del row[0] #2017
+        del row[0]  # 2019
+        del row[1]  # 2019
+        del row[7] #2019
         numLines=numLines+1
         flow.append(row)
 
@@ -40,10 +44,6 @@ numAttributes = len(flow[0])
 data = flow[1:numLines] # flow - line 0 (line 0 coresponds to the flow's feature title (i.e. flow ID, ))
 dateVector = dateVector[1:numLines]
 numLines = len(data)
-
-for k in range (0, numLines):
-    dateVector[k]=datetime.strptime(dateVector[k],'%d/%m/%Y %H:%M')
-
 #-------------------------------- END STEP 2 ---------------------------------------#
 
 #-------------------------------- STEP 3 -----------------------------------------#
@@ -54,8 +54,8 @@ for k in range (0, numLines):
 '''
 
 for a in range(0, numLines):
-    data[a][0] = int(ipaddress.ip_address(data[a][0]))
-    data[a][2] = int(ipaddress.ip_address(data[a][2]))
+    #data[a][0] = int(ipaddress.ip_address(data[a][0])) #17
+    #data[a][2] = int(ipaddress.ip_address(data[a][2])) #17
 
     if data[a][numAttributes - 1] == 'BENIGN':
         data[a][numAttributes - 1] = 1

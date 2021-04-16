@@ -19,7 +19,7 @@ def lista_simples(lista):
     else:
         return [lista]
 
-t = 1 #sliding window
+delta = 1 #sliding window
 wSize = 5 #window size
 window = [] #window vector
 minuteVecWindow = []
@@ -28,7 +28,7 @@ BckBytesIndex = 8  #forward bytes index
 
 for time in range(0,len(csvReader.dateVector)):
     window.append(csvReader.data[time][BckBytesIndex])
-    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == t):
+    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
         minuteVecWindow.append(window)
         d0 = csvReader.dateVector[time]
         window = []
