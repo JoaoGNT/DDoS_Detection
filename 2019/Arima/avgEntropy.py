@@ -20,9 +20,9 @@ import matplotlib.pyplot as plt
 '''
 
 avgVec = []
-for c in range(0,len(fwdPktEntropy.totalPacketsFwdEntropyVec)):
+for c in range(0, len(fwdPktEntropy.totalPacketsFwdEntropyVec)):
     avgEntropy = (fwdPktEntropy.totalPacketsFwdEntropyVec[c] + bckPktEntropy.totalPacketsBckEntropyVec[c]
-                  + fwdBytesEntropy.totalBytesFwdEntropyVec[c] + bckBytesEntropy.totalBytesBckEntropyVec[c])/4
+                  + fwdBytesEntropy.totalBytesFwdEntropyVec[c] + bckBytesEntropy.totalBytesBckEntropyVec[c]) / 4
     avgVec.append(avgEntropy)
 
 print(avgVec)
@@ -40,7 +40,7 @@ delta = 1 # sliding window delta
 dateVec = [] # x axis
 twindow = csvReader.dateVector[0] + datetime.timedelta(minutes=wSize) # 1st date in csv + 5min = the end of the first window
 dateVec.append(twindow) #appending the first date window value
-for s in range(0,len(fwdPktEntropy.minuteVecWindow)-6):
+for s in range(0, len(fwdPktEntropy.minuteVecWindow) - 6):
     twindow = twindow + datetime.timedelta(minutes=delta)
     dateVec.append(twindow)
 

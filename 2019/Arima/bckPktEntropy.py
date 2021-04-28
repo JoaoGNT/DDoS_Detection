@@ -5,7 +5,6 @@ This script returns a list composed by the backward packets entropy for each flo
 from scipy.stats import entropy
 from collections import Counter
 import csvReader
-import datetime
 
 #-------------------------------- STEP 1 -----------------------------------------#
 ''' Scope
@@ -26,9 +25,9 @@ minuteVecWindow = []
 d0 = csvReader.dateVector[0] #first date data
 BckBytesIndex = 7  #backward packets index
 
-for time in range(0,len(csvReader.dateVector)):
+for time in range(0, len(csvReader.dateVector)):
     window.append(csvReader.data[time][BckBytesIndex])
-    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
+    if (csvReader.dateVector[time].hour*60+ csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
         minuteVecWindow.append(window)
         d0 = csvReader.dateVector[time]
         window = []

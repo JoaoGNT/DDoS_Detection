@@ -1,11 +1,10 @@
 ''' General Scope
-This script returns a list composed by the backward bytes entropy for each flow window
+This script returns a list composed by the forward byter entropy for each flow window
 '''
 
 from scipy.stats import entropy
 from collections import Counter
 import csvReader
-import datetime
 
 #-------------------------------- STEP 1 -----------------------------------------#
 ''' Scope
@@ -24,11 +23,11 @@ wSize = 5 #window size
 window = [] #window vector
 minuteVecWindow = []
 d0 = csvReader.dateVector[0] #first date data
-BckBytesIndex = 9 #backward bytes index -- 2017
+BckBytesIndex = 8  #forward bytes index
 
-for time in range(0,len(csvReader.dateVector)):
+for time in range(0, len(csvReader.dateVector)):
     window.append(csvReader.data[time][BckBytesIndex])
-    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
+    if (csvReader.dateVector[time].hour*60+ csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
         minuteVecWindow.append(window)
         d0 = csvReader.dateVector[time]
         window = []
@@ -46,13 +45,14 @@ for t in range(wSize,len(minuteVecWindow)):
 
 #-------------------------------- STEP 2 -----------------------------------------#
 ''' Scope
-    *Calculating the entropy related to the backward bytes in each time window
+    *Calculating the entropy related to the forward bytes in each time window
 '''
 
-totalBytesBckEntropy = [] #
-totalBytesBckEntropyVec= [] #vector for the entropy related to the window
-probabilityList = [] #probability list compose of the propability of each value o bck bytes inside
-diffValuesVec = [] #vector to append the different values
+totalBytesFwdEntropy = []
+totalBytesFwdEntropyVec= []
+probabilityList = []
+diffValuesVec = []
+
 
 for a in range(0,len(vector)):
     counts = Counter(vector[a])
@@ -67,13 +67,12 @@ for a in range(0,len(vector)):
 
 for m in range (0,len(probabilityList)):
    if diffValuesVec[m] == 1:
-        totalBytesBckEntropy = 0
-        totalBytesBckEntropyVec.append(totalBytesBckEntropy)
+        totalBytesFwdEntropy = 0
+        totalBytesFwdEntropyVec.append(totalBytesFwdEntropy)
    else:
-        totalBytesBckEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
-        totalBytesBckEntropyVec.append(totalBytesBckEntropy)
+        totalBytesFwdEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
+        totalBytesFwdEntropyVec.append(totalBytesFwdEntropy)
 
-# print(len(totalBytesBckEntropyVec))
-# print(len(vector))
+# print(totalBytesFwdEntropyVec)
 
 #-------------------------------- END STEP 2 -----------------------------------------#

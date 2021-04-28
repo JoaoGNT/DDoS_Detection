@@ -1,11 +1,10 @@
 ''' General Scope
-This script returns a list composed by the forward packets entropy for each flow window
+This script returns a list composed by the backward packets entropy for each flow window
 '''
 
 from scipy.stats import entropy
 from collections import Counter
 import csvReader
-import datetime
 
 #-------------------------------- STEP 1 -----------------------------------------#
 ''' Scope
@@ -24,11 +23,11 @@ wSize = 5 #window size
 window = [] #window vector
 minuteVecWindow = []
 d0 = csvReader.dateVector[0] #first date data
-BckBytesIndex = 6  #forward packets index
+BckBytesIndex = 7  #backward packets index
 
-for time in range(0,len(csvReader.dateVector)):
+for time in range(0, len(csvReader.dateVector)):
     window.append(csvReader.data[time][BckBytesIndex])
-    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
+    if (csvReader.dateVector[time].hour*60+ csvReader.dateVector[time].minute - d0.hour*60-d0.minute == delta):
         minuteVecWindow.append(window)
         d0 = csvReader.dateVector[time]
         window = []
@@ -46,11 +45,11 @@ for t in range(wSize,len(minuteVecWindow)):
 
 #-------------------------------- STEP 2 -----------------------------------------#
 ''' Scope
-    *Calculating the entropy related to the forward packets in each time window and composing
+    *Calculating the entropy related to the backward packets in each time window
 '''
 
-totalPacketsFwdEntropy = []
-totalPacketsFwdEntropyVec= []
+totalPacketsBckEntropy = []
+totalPacketsBckEntropyVec= []
 probabilityList = []
 diffValuesVec = []
 
@@ -68,12 +67,12 @@ for a in range(0,len(vector)):
 
 for m in range (0,len(probabilityList)):
    if diffValuesVec[m] == 1:
-        totalPacketsFwdEntropy = 0
-        totalPacketsFwdEntropyVec.append(totalPacketsFwdEntropy)
+        totalPacketsBckEntropy = 0
+        totalPacketsBckEntropyVec.append(totalPacketsBckEntropy)
    else:
-        totalPacketsFwdEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
-        totalPacketsFwdEntropyVec.append(totalPacketsFwdEntropy)
+        totalPacketsBckEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
+        totalPacketsBckEntropyVec.append(totalPacketsBckEntropy)
 
-# print(totalPacketsFwdEntropyVec)
+# print(totalPacketsBckEntropyVec)
 
 #-------------------------------- END STEP 2 -----------------------------------------#

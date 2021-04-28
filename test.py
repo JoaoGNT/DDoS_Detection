@@ -1,64 +1,37 @@
-from scipy.stats import entropy
-from collections import Counter
-import csvReader
-import datetime
-
-def lista_simples(lista):
-    if isinstance(lista, list):
-        return [sub_elem for elem in lista for sub_elem in lista_simples(elem)]
-    else:
-        return [lista]
-
-t = 1 #minutes
-window = []
-minuteVecWindow = []
-d0 = csvReader.dateVector[0]
-for time in range(0,len(csvReader.dateVector)):
-    window.append(csvReader.data[time][6])
-    if (csvReader.dateVector[time].hour*60+csvReader.dateVector[time].minute - d0.hour*60-d0.minute == t):
-        minuteVecWindow.append(window)
-        d0 = csvReader.dateVector[time]
-        window = []
-vector =[]
-for t in range(5,len(minuteVecWindow)):
-    vec = minuteVecWindow[t-5:t+1]
-    vector.append(lista_simples(vec))
-
-twindow = csvReader.dateVector[0] + datetime.timedelta(minutes=5)
-dateVec = []
-dateVec.append(twindow)
-
-# print(vector[2][0][0])
-# print(len(vector[2][0]))
-# print(type(vector[2][0]))
+v = [[19,2,3,4,5,1],[1,2,3,5,5,1],[1,3,4,5,5,1],[1,6,8,9,10,1]]
+suma = []
+S=[]
 
 
+for r in range(0,len(v[0])):
+    for j in range(0, len(v)):
+        suma.append(v[j][r])
+    soma = sum(suma)
+    suma = []
+    S.append(soma)
 
-totalPacketsBckEntropy = []
-totalPacketsBckEntropyVec= []
-probabilityList = []
-diffValuesVec = []
-#print(vectorWindow)
-for a in range(0,len(vector)):
-    counts = Counter(vector[a])
-    # print(counts)
-    # print(counts.items())
-    total = sum(list(counts.values()))
-    probability_mass = {k: v/total for k, v in counts.items()}
-    probability = list(probability_mass.values())
-    probabilityList.append(probability)
-    diffValues = len(counts.items())
-    diffValuesVec.append(diffValues)
+print(S)
+print(v)
 
-for m in range (0,len(probabilityList)):
-   if diffValuesVec[m] == 1:
-        totalPacketsBckEntropy = 0
-        totalPacketsBckEntropyVec.append(totalPacketsBckEntropy)
-   else:
-        totalPacketsBckEntropy = entropy(probabilityList[m], base=diffValuesVec[m])
-        totalPacketsBckEntropyVec.append(totalPacketsBckEntropy)
+l = len(v[0])
+contador = 0
+for k in range(0,l):
 
+    if S[k] <= 18:
 
-print(totalPacketsBckEntropyVec)
-print(len(totalPacketsBckEntropyVec))
+        for j in range(0,len(v)):
+            del v[j][k-contador]
+        contador = contador + 1
 
+print(v)
+
+ar = []
+bt=[]
+
+for rr in range(0,len(v[0])):
+    for jj in range(0, len(v)):
+        ar.append(v[jj][rr])
+    h = sum(ar)
+    ar = []
+    bt.append(h)
+print(bt)

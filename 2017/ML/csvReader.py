@@ -13,22 +13,30 @@ from datetime import datetime
     *Both vectors are organized in the same way 
 '''
 
-#file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
-file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2019/01-12/DrDoS_DNS.csv' #2019
+file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2017/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv'
 flow = [] # vector to append data form the data base -- deleting rows 0 and 6 (flow ID and timestamp,respictively)
 numLines = 0 # initializing a counter number of lines for vector flow
 dateVector = [] # vector with the timestamp for each flow
+label = []
 with open(file,'r') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         dateVector.append(row[6])
-        #del row[6] #2017
-        #del row[0] #2017
-        del row[0]  # 2019
-        del row[1]  # 2019
-        del row[7] #2019
+        label.append(row[84])
+        del row[84]
+        del row[21]
+        del row[20]
+        del row[6]
+        del row[0]
+        # del row[6] #timestamp
+        # del row[0] #flow id
+        # del row[82]  # label
+        # del row[15] #byte/s
+        # del row[13] #packet/s
         numLines=numLines+1
         flow.append(row)
+
+label = label[1:numLines]
 
 #-------------------------------- END STEP 1 ---------------------------------------#
 
@@ -44,6 +52,9 @@ numAttributes = len(flow[0])
 data = flow[1:numLines] # flow - line 0 (line 0 coresponds to the flow's feature title (i.e. flow ID, ))
 dateVector = dateVector[1:numLines]
 numLines = len(data)
+
+for k in range (0, numLines):
+    dateVector[k]=datetime.strptime(dateVector[k],'%d/%m/%Y %H:%M') #this for changes the dateVector from str to timestamp type
 #-------------------------------- END STEP 2 ---------------------------------------#
 
 #-------------------------------- STEP 3 -----------------------------------------#
@@ -54,26 +65,53 @@ numLines = len(data)
 '''
 
 for a in range(0, numLines):
-    #data[a][0] = int(ipaddress.ip_address(data[a][0])) #17
-    #data[a][2] = int(ipaddress.ip_address(data[a][2])) #17
+    data[a][0] = int(ipaddress.ip_address(data[a][0]))
+    data[a][2] = int(ipaddress.ip_address(data[a][2]))
 
-    if data[a][numAttributes - 1] == 'BENIGN':
-        data[a][numAttributes - 1] = 1
+    if label[a]== 'BENIGN':
+        label[a] = 1
     else:
-        data[a][numAttributes - 1] = -1
+        label[a] = -1
 
-    for b in range(1, numAttributes - 1):
+    for b in range(1, numAttributes):
         data[a][b] = float(data[a][b])
+data = data # final object
 
+# print(data[1])
 #-------------------------------- END STEP 3 ---------------------------------------#
 
-data = data # final object
-'''
-def lista_simples(lista):
-    if isinstance(lista, list):
-        return [sub_elem for elem in lista for sub_elem in lista_simples(elem)]
-    else:
-        return [lista]
+#-------------------------------- STEP 4 -----------------------------------------#
+''' Scope
+    * Removing rows only filled with 0s and rows wich the sum is infinite
 '''
 
+contrVec = []
+vecSum=[]
+for r in range(0,len(data[0])):
+    for j in range(0, len(data)):
+        contrVec.append(data[j][r])
+    s = sum(contrVec)
+    contrVec = []
+    vecSum.append(s)
 
+l = len(data[0])
+contador = 0
+for k in range(0,l):
+    if vecSum[k] == 0 :
+        for j in range(0,len(data)):
+            del data[j][k-contador]
+        contador = contador + 1
+
+#-------------------------------- END STEP 4 ---------------------------------------#
+
+#
+# ar = []
+# bt=[]
+#
+# for rr in range(0,len(data[0])):
+#     for jj in range(0, len(data)):
+#         ar.append(data[jj][rr])
+#     h = sum(ar)
+#     ar = []
+#     bt.append(h)
+# print(bt)
