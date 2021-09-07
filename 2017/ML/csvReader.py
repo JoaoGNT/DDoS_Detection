@@ -5,6 +5,8 @@ and at the end of this script have all the data that will be used along this wor
 import csv
 import ipaddress
 from datetime import datetime
+import pandas as pd
+import seaborn as sns
 
 #-------------------------------- STEP 1 -----------------------------------------#
 ''' Scope
@@ -37,7 +39,7 @@ with open(file,'r') as csvfile:
         flow.append(row)
 
 label = label[1:numLines]
-
+print(flow[0])
 #-------------------------------- END STEP 1 ---------------------------------------#
 
 #-------------------------------- STEP 2 -----------------------------------------#
@@ -77,6 +79,14 @@ for a in range(0, numLines):
         data[a][b] = float(data[a][b])
 data = data # final object
 
+df = pd.DataFrame(data)
+df.columns = flow[0]
+dataInteresse = df.drop(flow[0][4:80], axis=1)
+dataInteresse.insert(0, 'Label',label, True)
+print(dataInteresse)
+
+sns.pairplot(dataInteresse,hue=('Label'))
+sns.sh
 # print(data[1])
 #-------------------------------- END STEP 3 ---------------------------------------#
 
@@ -103,15 +113,3 @@ for k in range(0,l):
         contador = contador + 1
 
 #-------------------------------- END STEP 4 ---------------------------------------#
-
-#
-# ar = []
-# bt=[]
-#
-# for rr in range(0,len(data[0])):
-#     for jj in range(0, len(data)):
-#         ar.append(data[jj][rr])
-#     h = sum(ar)
-#     ar = []
-#     bt.append(h)
-# print(bt)

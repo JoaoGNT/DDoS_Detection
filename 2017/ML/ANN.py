@@ -1,75 +1,69 @@
+import randomlist
 import datetime
 begin_time = datetime.datetime.now()
 import csvReader
+from copy import deepcopy
 import pandas as pd
 from sklearn import preprocessing
-from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPClassifier
-import random
 
+
+#randomlist.nTest = 5
+#randomlist.nSample = 10000 :: Training
 
 training = []
-trainingLabels= []
+traininglabels = []
+for a in range(0,randomlist.nTest):
+    t = []
+    tl = []
+    for j in range(0, randomlist.nSample):
+        t.append(csvReader.data[randomlist.RList[a][j]])
+        tl.append(csvReader.label[randomlist.RList[a][j]])
+    training.append(t)
+    traininglabels.append(tl)
 
-randomlist = sorted(random.sample(range(0, len(csvReader.data)), 10000))
+test = []
+testlabels = []
+data = [deepcopy(csvReader.data) for i in range(randomlist.nTest)]
+label = [deepcopy(csvReader.label) for i in range(randomlist.nTest)]
 
+for i in range(0,randomlist.nTest):
+    print(len(data[i]), i)
+    for k in range(0, randomlist.nSample):
 
-for j in range(0,len(randomlist)):
-    training.append(csvReader.data[randomlist[j]])
-    trainingLabels.append(csvReader.label[randomlist[j]])
-
-for k in range(0, len(randomlist)):
-    csvReader.data.pop(randomlist[k]-k)
-    csvReader.label.pop(randomlist[k]-k)
-
-test = csvReader.data
-testlabel = csvReader.label
-
-min_max_scaler = preprocessing.MinMaxScaler()
-training = min_max_scaler.fit_transform(training)
-
-
-clf = MLPClassifier(solver='lbfgs', alpha=1e-8,hidden_layer_sizes=(20, 5), random_state=1)
-clf.fit(training, trainingLabels)
-results = clf.predict_proba(test)
-
-# print(len(results))
-# print(len(testlabel),"\n\n\n")
-# print(results)
-
-print(results[0][0])
-print(testlabel[0],"\n\n\n")
-
-counter = 0
-c=0
-for m in range(0,len(results)):
-
-    if(results[m][0] == testlabel[m]):
-        counter = counter + 1
-    if(testlabel == 1):
-        c = c+1
-
-print("Quant. de Ataques - Teste :",c)
-
-print("Acertos: ",counter)
-print("Erros: ", len(results)-counter)
-print("Taxa de Acertos:", counter/len(results))
+        data[i].pop(randomlist.RList[i][k] - k)
+        label[i].pop(randomlist.RList[i][k] - k)
+    test.append(data[i])
+    testlabels.append(label[i])
 
 
+for n in range(0,randomlist.nTest):
+    min_max_scaler = preprocessing.MinMaxScaler()
+    tra = min_max_scaler.fit_transform(training[n])
+    clf = MLPClassifier(solver='lbfgs', alpha=1e-8,hidden_layer_sizes=(100, 30), random_state=1)
+    clf.fit(tra, traininglabels[n])
+    results = clf.predict(test[n])
+    # print(results[0])
+    # print(testlabels[n][0],"\n\n\n")
 
+    counter = 0
+    c = 0
+    for m in range(0,len(results)):
 
-# print(data[0])
-# ModelAnn = MLPClassifier()
-# parameters = {'solver': ['adam'], 'alpha': [1e-5, 1e-3, 1e-1],
-#               'hidden_layer_sizes': [(25, 50, 10), (50, 50, 10), (100, 100, 10), (100, 50, 10), (50, 10)],
-#               'random_state': [1], 'activation': ['identity', 'relu', 'logistic']}
-# clf = GridSearchCV(ModelAnn, parameters, cv=10)
-# clf.fit(data, csvReader.label)
-#
-# dataFrame = pd.DataFrame.from_dict(clf.cv_results_)
-# dataFrame.to_excel("annEDistance.xlsx", sheet_name="ann")
-# print(clf.best_params_)
-#
-# print('Time Elapsed(s):',datetime.datetime.now() - begin_time)
+        if(results[m] == testlabels[n][m]):
+            counter = counter + 1
+        if(testlabels[n][m] == 1):
+            c = c+1
 
+    counter2=0
+    for k in range(0,len(tra)):
+        if (traininglabels[n][k] == 1):
+            counter2 = counter2 + 1
+
+    print("Quant. de Ataques - Teste :",c)
+    print("Quant. de Ataques - Training :",counter2)
+    print("Quant. Ataques Total: ",c+counter2)
+    print("Acertos: ",counter)
+    print("Erros: ", len(results)-counter)
+    print("Taxa de Acertos:", counter/len(results),"\n\n")
 
