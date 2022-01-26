@@ -1,12 +1,10 @@
 ''' General Scope
 This script has as his main goal transform and manipulate the data from csv databases
-and at the end of this script have all the data that will be used along this work
+and at the end of the script have all the data that will be used along this work
 '''
 import csv
 import ipaddress
 from datetime import datetime
-import pandas as pd
-import seaborn as sns
 
 #-------------------------------- STEP 1 -----------------------------------------#
 ''' Scope
@@ -39,7 +37,7 @@ with open(file,'r') as csvfile:
         flow.append(row)
 
 label = label[1:numLines]
-print(flow[0])
+columns = flow[0]
 #-------------------------------- END STEP 1 ---------------------------------------#
 
 #-------------------------------- STEP 2 -----------------------------------------#
@@ -71,22 +69,20 @@ for a in range(0, numLines):
     data[a][2] = int(ipaddress.ip_address(data[a][2]))
 
     if label[a]== 'BENIGN':
-        label[a] = 1
+        label[a] = 0
     else:
-        label[a] = -1
+        label[a] = 1
 
     for b in range(1, numAttributes):
         data[a][b] = float(data[a][b])
 data = data # final object
-
+'''
 df = pd.DataFrame(data)
 df.columns = flow[0]
 dataInteresse = df.drop(flow[0][4:80], axis=1)
 dataInteresse.insert(0, 'Label',label, True)
-print(dataInteresse)
-
-sns.pairplot(dataInteresse,hue=('Label'))
-sns.sh
+# print(dataInteresse)
+'''
 # print(data[1])
 #-------------------------------- END STEP 3 ---------------------------------------#
 
@@ -110,6 +106,7 @@ for k in range(0,l):
     if vecSum[k] == 0 :
         for j in range(0,len(data)):
             del data[j][k-contador]
+        del flow[0][k]
         contador = contador + 1
 
 #-------------------------------- END STEP 4 ---------------------------------------#

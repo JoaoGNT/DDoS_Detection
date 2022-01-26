@@ -32,8 +32,8 @@ for i in range(0,randomlist.nTest):
         label[i].pop(randomlist.RList[i][k] - k)
     test.append(data[i])
     testlabels.append(label[i])
-print(len(test))
-print(len(test[0]))
+
+
 end_processtime = datetime.now()
 time2process = end_processtime - begining_process
 
@@ -47,17 +47,16 @@ for n in range(0,randomlist.nTest):
     begining_training = datetime.now()
     min_max_scaler = preprocessing.MinMaxScaler()
     tra = min_max_scaler.fit_transform(training[n])
-    tst = min_max_scaler.fit_transform(test[n])
     for a in range(0, len(alpha)):
         for arc in range(0, len(architecture)):
             clf = MLPClassifier(solver='adam', alpha=alpha[a], hidden_layer_sizes=architecture[arc], random_state=1)
             clf.fit(tra, traininglabels[n])
-            results = clf.predict(tst)
+            results = clf.predict(test[n])
             end_training = datetime.now()
             counter = 0
             c = 0
-            verd_positivo = 0
-            verd_negativo = 0
+            verd_positivo=0
+            verd_negativo=0
             falso_positivo = 0
             falso_negativo = 0
             erros = 0
@@ -66,10 +65,10 @@ for n in range(0,randomlist.nTest):
 
                 if (results[m] == testlabels[n][m]):
                     counter = counter + 1
-                    if (results[m] == 1):
-                        verd_positivo = verd_positivo + 1
-                    if (results[m] == 0):
-                        verd_negativo = verd_negativo + 1
+                    if(results[m]==1):
+                        verd_positivo = verd_positivo +1
+                    if(results[m]==0):
+                        verd_negativo=verd_negativo+1
 
                 if (results[m] != testlabels[n][m]):
                     erros = erros + 1

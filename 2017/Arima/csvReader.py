@@ -17,16 +17,19 @@ file = 'C:/Users/jg_te/Documents/UFU/TCC/Datasets/2017/TrafficLabelling/Friday-W
 flow = [] # vector to append data form the data base -- deleting rows 0 and 6 (flow ID and timestamp,respictively)
 numLines = 0 # initializing a counter number of lines for vector flow
 dateVector = [] # vector with the timestamp for each flow
+label = []
 
 with open(file,'r') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
+        label.append(row[84])
         dateVector.append(row[6])
         del row[6]
         del row[0]
         numLines=numLines+1
         flow.append(row)
 
+label = label[1:numLines]
 #-------------------------------- END STEP 1 ---------------------------------------#
 
 #-------------------------------- STEP 2 -----------------------------------------#
@@ -58,9 +61,9 @@ for a in range(0, numLines):
     data[a][2] = int(ipaddress.ip_address(data[a][2])) #17
 
     if data[a][numAttributes - 1] == 'BENIGN':
-        data[a][numAttributes - 1] = 1
+        data[a][numAttributes - 1] = 0
     else:
-        data[a][numAttributes - 1] = -1
+        data[a][numAttributes - 1] = 1
 
     for b in range(1, numAttributes - 1):
         data[a][b] = float(data[a][b])
@@ -68,6 +71,7 @@ for a in range(0, numLines):
 #-------------------------------- END STEP 3 ---------------------------------------#
 
 data = data # final object
+
 '''
 def lista_simples(lista):
     if isinstance(lista, list):
