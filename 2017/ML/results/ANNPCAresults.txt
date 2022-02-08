@@ -60,8 +60,6 @@ Falso-Neg:  247
 Taxa de Acertos: 0.9931585900020858
 
 
-C:\Users\jg_te\PycharmProjects\DDoS_Detection\venv\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
-  warnings.warn(
 Time Elapsed(s): 0:02:07.864584
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -471,8 +469,6 @@ Falso-Neg:  50
 Taxa de Acertos: 0.9963938909360588
 
 
-C:\Users\jg_te\PycharmProjects\DDoS_Detection\venv\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
-  warnings.warn(
 Time Elapsed(s): 0:02:07.974491
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -882,8 +878,6 @@ Falso-Neg:  125
 Taxa de Acertos: 0.9939697327863913
 
 
-C:\Users\jg_te\PycharmProjects\DDoS_Detection\venv\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
-  warnings.warn(
 Time Elapsed(s): 0:02:06.495252
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1293,8 +1287,6 @@ Falso-Neg:  27
 Taxa de Acertos: 0.993974367888016
 
 
-C:\Users\jg_te\PycharmProjects\DDoS_Detection\venv\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
-  warnings.warn(
 Time Elapsed(s): 0:02:11.325138
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1704,8 +1696,6 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9896127372592645
 
 
-C:\Users\jg_te\PycharmProjects\DDoS_Detection\venv\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:614: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
-  warnings.warn(
 Time Elapsed(s): 0:02:06.913744
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -2052,6 +2042,3 @@ Falso-Pos:  5293
 Falso-Neg:  17
 Taxa de Acertos: 0.9753876103733574 
 
-
-
-Process finished with exit code 0

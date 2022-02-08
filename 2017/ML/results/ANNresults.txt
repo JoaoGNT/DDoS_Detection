@@ -677,6 +677,3 @@ Falso-Pos:  5034
 Falso-Neg:  17
 Taxa de Acertos: 0.9765881016941297
 
-
-
-Process finished with exit code 0
