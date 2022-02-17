@@ -39,8 +39,6 @@ time2process = end_processtime - begining_process
 
 alpha = [0.001,1,10]
 architecture = [(100, 100, 10), (100,50,10), (50,10)]
-#components = 70
-components = [49, 35, 21]
 
 for n in range(0,randomlist.nTest):
     print('Test:', n)
