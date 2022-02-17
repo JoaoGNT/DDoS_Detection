@@ -14,7 +14,7 @@ Falso-Pos:  40
 Falso-Neg:  27
 Taxa de Acertos: 0.9996894481911516
 
-
+n_components: 49
 Time Elapsed(s): 0:01:29.054287
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -29,7 +29,7 @@ Falso-Pos:  8
 Falso-Neg:  19
 Taxa de Acertos: 0.9998748522561357
 
-
+n_components: 49
 Time Elapsed(s): 0:01:32.698135
 Architecure: (50, 10)
 Alpha: 0.001
@@ -44,7 +44,7 @@ Falso-Pos:  53
 Falso-Neg:  22
 Taxa de Acertos: 0.9996523673781548
 
-
+n_components: 49
 Time Elapsed(s): 0:01:46.200079
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -59,7 +59,7 @@ Falso-Pos:  1229
 Falso-Neg:  247
 Taxa de Acertos: 0.9931585900020858
 
-
+n_components: 49
 Time Elapsed(s): 0:02:07.864584
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -74,7 +74,7 @@ Falso-Pos:  1383
 Falso-Neg:  60
 Taxa de Acertos: 0.9933115483556977
 
-
+n_components: 49
 Time Elapsed(s): 0:02:13.647868
 Architecure: (50, 10)
 Alpha: 1
@@ -89,7 +89,7 @@ Falso-Pos:  1889
 Falso-Neg:  34
 Taxa de Acertos: 0.9910866995758882
 
-
+n_components: 49
 Time Elapsed(s): 0:02:27.895345
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -104,7 +104,7 @@ Falso-Pos:  4144
 Falso-Neg:  19
 Taxa de Acertos: 0.9807040719367772
 
-
+n_components: 49
 Time Elapsed(s): 0:02:36.696008
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -119,7 +119,7 @@ Falso-Pos:  4262
 Falso-Neg:  19
 Taxa de Acertos: 0.9801571299450741
 
-
+n_components: 49
 Time Elapsed(s): 0:02:41.486271
 Architecure: (50, 10)
 Alpha: 10
@@ -150,7 +150,7 @@ Falso-Pos:  46
 Falso-Neg:  28
 Taxa de Acertos: 0.9996570024797794
 
-
+n_components: 35
 Time Elapsed(s): 0:02:50.545224
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -165,7 +165,7 @@ Falso-Pos:  59
 Falso-Neg:  24
 Taxa de Acertos: 0.999615286565158
 
-
+n_components: 35
 Time Elapsed(s): 0:02:54.151118
 Architecure: (50, 10)
 Alpha: 0.001
@@ -180,7 +180,7 @@ Falso-Pos:  57
 Falso-Neg:  21
 Taxa de Acertos: 0.999638462073281
 
-
+n_components: 35
 Time Elapsed(s): 0:03:02.595137
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -195,7 +195,7 @@ Falso-Pos:  1694
 Falso-Neg:  56
 Taxa de Acertos: 0.9918885721569446
 
-
+n_components: 35
 Time Elapsed(s): 0:03:11.180418
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -210,7 +210,7 @@ Falso-Pos:  1319
 Falso-Neg:  220
 Taxa de Acertos: 0.9928665785997358
 
-
+n_components: 35
 Time Elapsed(s): 0:03:15.684419
 Architecure: (50, 10)
 Alpha: 1
@@ -225,7 +225,7 @@ Falso-Pos:  1731
 Falso-Neg:  98
 Taxa de Acertos: 0.9915223991286009
 
-
+n_components: 35
 Time Elapsed(s): 0:03:24.659848
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -240,7 +240,7 @@ Falso-Pos:  4355
 Falso-Neg:  19
 Taxa de Acertos: 0.979726065493986
 
-
+n_components: 35
 Time Elapsed(s): 0:03:33.925309
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -255,7 +255,7 @@ Falso-Pos:  4241
 Falso-Neg:  19
 Taxa de Acertos: 0.9802544670791907
 
-
+n_components: 35
 Time Elapsed(s): 0:03:38.332522
 Architecure: (50, 10)
 Alpha: 10
@@ -286,7 +286,7 @@ Falso-Pos:  26
 Falso-Neg:  26
 Taxa de Acertos: 0.9997589747155207
 
-
+n_components: 21
 Time Elapsed(s): 0:03:46.725271
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -301,7 +301,7 @@ Falso-Pos:  10
 Falso-Neg:  46
 Taxa de Acertos: 0.9997404343090223
 
-
+n_components: 21
 Time Elapsed(s): 0:03:49.604694
 Architecure: (50, 10)
 Alpha: 0.001
@@ -316,7 +316,7 @@ Falso-Pos:  27
 Falso-Neg:  19
 Taxa de Acertos: 0.9997867853252682
 
-
+n_components: 21
 Time Elapsed(s): 0:03:58.502796
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -331,7 +331,7 @@ Falso-Pos:  1313
 Falso-Neg:  165
 Taxa de Acertos: 0.9931493197988366
 
-
+n_components: 21
 Time Elapsed(s): 0:04:07.143253
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -346,7 +346,7 @@ Falso-Pos:  1678
 Falso-Neg:  30
 Taxa de Acertos: 0.9920832464251779
 
-
+n_components: 21
 Time Elapsed(s): 0:04:11.287269
 Architecure: (50, 10)
 Alpha: 1
@@ -361,7 +361,7 @@ Falso-Pos:  1762
 Falso-Neg:  227
 Taxa de Acertos: 0.9907807828686644
 
-
+n_components: 21
 Time Elapsed(s): 0:04:22.873839
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -376,7 +376,7 @@ Falso-Pos:  3738
 Falso-Neg:  19
 Taxa de Acertos: 0.9825859231963661
 
-
+n_components: 21
 Time Elapsed(s): 0:04:29.667559
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -391,7 +391,7 @@ Falso-Pos:  4167
 Falso-Neg:  19
 Taxa de Acertos: 0.9805974645994113
 
-
+n_components: 21
 Time Elapsed(s): 0:04:33.799770
 Architecure: (50, 10)
 Alpha: 10
@@ -423,7 +423,7 @@ Falso-Pos:  13
 Falso-Neg:  9
 Taxa de Acertos: 0.9998980277642587
 
-
+n_components: 49
 Time Elapsed(s): 0:01:30.926513
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -438,7 +438,7 @@ Falso-Pos:  13
 Falso-Neg:  5
 Taxa de Acertos: 0.9999165681707571
 
-
+n_components: 49
 Time Elapsed(s): 0:01:34.857280
 Architecure: (50, 10)
 Alpha: 0.001
@@ -453,7 +453,7 @@ Falso-Pos:  20
 Falso-Neg:  22
 Taxa de Acertos: 0.9998053257317666
 
-
+n_components: 49
 Time Elapsed(s): 0:01:46.662455
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -468,7 +468,7 @@ Falso-Pos:  728
 Falso-Neg:  50
 Taxa de Acertos: 0.9963938909360588
 
-
+n_components: 49
 Time Elapsed(s): 0:02:07.974491
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -483,7 +483,7 @@ Falso-Pos:  765
 Falso-Neg:  47
 Taxa de Acertos: 0.9962362974808223
 
-
+n_components: 49
 Time Elapsed(s): 0:02:13.569386
 Architecure: (50, 10)
 Alpha: 1
@@ -498,7 +498,7 @@ Falso-Pos:  1603
 Falso-Neg:  23
 Taxa de Acertos: 0.9924633247583954
 
-
+n_components: 49
 Time Elapsed(s): 0:02:25.329459
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -513,7 +513,7 @@ Falso-Pos:  3539
 Falso-Neg:  18
 Taxa de Acertos: 0.9835129435212867
 
-
+n_components: 49
 Time Elapsed(s): 0:02:35.849554
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -528,7 +528,7 @@ Falso-Pos:  4199
 Falso-Neg:  18
 Taxa de Acertos: 0.9804537764490486
 
-
+n_components: 49
 Time Elapsed(s): 0:02:39.982061
 Architecure: (50, 10)
 Alpha: 10
@@ -559,7 +559,7 @@ Falso-Pos:  14
 Falso-Neg:  5
 Taxa de Acertos: 0.9999119330691325
 
-
+n_components: 35
 Time Elapsed(s): 0:02:49.481617
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -574,7 +574,7 @@ Falso-Pos:  17
 Falso-Neg:  6
 Taxa de Acertos: 0.9998933926626341
 
-
+n_components: 35
 Time Elapsed(s): 0:02:53.476628
 Architecure: (50, 10)
 Alpha: 0.001
@@ -589,7 +589,7 @@ Falso-Pos:  26
 Falso-Neg:  32
 Taxa de Acertos: 0.999731164105773
 
-
+n_components: 35
 Time Elapsed(s): 0:03:08.106406
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -604,7 +604,7 @@ Falso-Pos:  943
 Falso-Neg:  19
 Taxa de Acertos: 0.9955410322371318
 
-
+n_components: 35
 Time Elapsed(s): 0:03:18.952446
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -619,7 +619,7 @@ Falso-Pos:  1208
 Falso-Neg:  47
 Taxa de Acertos: 0.9941829474611231
 
-
+n_components: 35
 Time Elapsed(s): 0:03:23.820179
 Architecure: (50, 10)
 Alpha: 1
@@ -634,7 +634,7 @@ Falso-Pos:  1761
 Falso-Neg:  19
 Taxa de Acertos: 0.9917495191082064
 
-
+n_components: 35
 Time Elapsed(s): 0:03:37.412304
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -649,7 +649,7 @@ Falso-Pos:  4190
 Falso-Neg:  18
 Taxa de Acertos: 0.9804954923636701
 
-
+n_components: 35
 Time Elapsed(s): 0:03:46.725346
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -664,7 +664,7 @@ Falso-Pos:  4474
 Falso-Neg:  18
 Taxa de Acertos: 0.9791791235022828
 
-
+n_components: 35
 Time Elapsed(s): 0:03:51.157051
 Architecure: (50, 10)
 Alpha: 10
@@ -695,7 +695,7 @@ Falso-Pos:  29
 Falso-Neg:  3
 Taxa de Acertos: 0.9998516767480127
 
-
+n_components: 21
 Time Elapsed(s): 0:04:00.707656
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -710,7 +710,7 @@ Falso-Pos:  29
 Falso-Neg:  3
 Taxa de Acertos: 0.9998516767480127
 
-
+n_components: 21
 Time Elapsed(s): 0:04:03.788359
 Architecure: (50, 10)
 Alpha: 0.001
@@ -725,7 +725,7 @@ Falso-Pos:  35
 Falso-Neg:  6
 Taxa de Acertos: 0.9998099608333912
 
-
+n_components: 21
 Time Elapsed(s): 0:04:13.935179
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -740,7 +740,7 @@ Falso-Pos:  822
 Falso-Neg:  24
 Taxa de Acertos: 0.9960787040255857
 
-
+n_components: 21
 Time Elapsed(s): 0:04:20.845461
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -755,7 +755,7 @@ Falso-Pos:  1697
 Falso-Neg:  18
 Taxa de Acertos: 0.9920508007138057
 
-
+n_components: 21
 Time Elapsed(s): 0:04:24.381606
 Architecure: (50, 10)
 Alpha: 1
@@ -770,7 +770,7 @@ Falso-Pos:  1434
 Falso-Neg:  97
 Taxa de Acertos: 0.9929036594127326
 
-
+n_components: 21
 Time Elapsed(s): 0:04:35.158080
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -785,7 +785,7 @@ Falso-Pos:  3748
 Falso-Neg:  18
 Taxa de Acertos: 0.9825442072817446
 
-
+n_components: 21
 Time Elapsed(s): 0:04:44.216963
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -800,7 +800,7 @@ Falso-Pos:  4310
 Falso-Neg:  18
 Taxa de Acertos: 0.9799392801687177
 
-
+n_components: 21
 Time Elapsed(s): 0:04:47.602929
 Architecure: (50, 10)
 Alpha: 10
@@ -832,7 +832,7 @@ Falso-Pos:  6
 Falso-Neg:  24
 Taxa de Acertos: 0.9998609469512619
 
-
+n_components: 49
 Time Elapsed(s): 0:01:29.672031
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -847,7 +847,7 @@ Falso-Pos:  8
 Falso-Neg:  20
 Taxa de Acertos: 0.9998702171545111
 
-
+n_components: 49
 Time Elapsed(s): 0:01:33.286085
 Architecure: (50, 10)
 Alpha: 0.001
@@ -862,7 +862,7 @@ Falso-Pos:  25
 Falso-Neg:  22
 Taxa de Acertos: 0.9997821502236437
 
-
+n_components: 49
 Time Elapsed(s): 0:01:45.111495
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -877,7 +877,7 @@ Falso-Pos:  1176
 Falso-Neg:  125
 Taxa de Acertos: 0.9939697327863913
 
-
+n_components: 49
 Time Elapsed(s): 0:02:06.495252
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -892,7 +892,7 @@ Falso-Pos:  1330
 Falso-Neg:  67
 Taxa de Acertos: 0.9935247630304295
 
-
+n_components: 49
 Time Elapsed(s): 0:02:10.856973
 Architecure: (50, 10)
 Alpha: 1
@@ -907,7 +907,7 @@ Falso-Pos:  1770
 Falso-Neg:  81
 Taxa de Acertos: 0.9914204268928596
 
-
+n_components: 49
 Time Elapsed(s): 0:02:22.775243
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -922,7 +922,7 @@ Falso-Pos:  3587
 Falso-Neg:  23
 Taxa de Acertos: 0.9832672831351827
 
-
+n_components: 49
 Time Elapsed(s): 0:02:31.014706
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -937,7 +937,7 @@ Falso-Pos:  3452
 Falso-Neg:  23
 Taxa de Acertos: 0.9838930218545041
 
-
+n_components: 49
 Time Elapsed(s): 0:02:35.188118
 Architecure: (50, 10)
 Alpha: 10
@@ -968,7 +968,7 @@ Falso-Pos:  13
 Falso-Neg:  27
 Taxa de Acertos: 0.9998145959350159
 
-
+n_components: 35
 Time Elapsed(s): 0:02:45.270195
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -983,7 +983,7 @@ Falso-Pos:  15
 Falso-Neg:  26
 Taxa de Acertos: 0.9998099608333912
 
-
+n_components: 35
 Time Elapsed(s): 0:02:49.480212
 Architecure: (50, 10)
 Alpha: 0.001
@@ -998,7 +998,7 @@ Falso-Pos:  23
 Falso-Neg:  24
 Taxa de Acertos: 0.9997821502236437
 
-
+n_components: 35
 Time Elapsed(s): 0:03:04.473566
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1013,7 +1013,7 @@ Falso-Pos:  1298
 Falso-Neg:  47
 Taxa de Acertos: 0.9937657883149088
 
-
+n_components: 35
 Time Elapsed(s): 0:03:17.816967
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1028,7 +1028,7 @@ Falso-Pos:  922
 Falso-Neg:  268
 Taxa de Acertos: 0.9944842290667223
 
-
+n_components: 35
 Time Elapsed(s): 0:03:22.722476
 Architecure: (50, 10)
 Alpha: 1
@@ -1043,7 +1043,7 @@ Falso-Pos:  1682
 Falso-Neg:  85
 Taxa de Acertos: 0.9918097754293262
 
-
+n_components: 35
 Time Elapsed(s): 0:03:32.734940
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1058,7 +1058,7 @@ Falso-Pos:  4168
 Falso-Neg:  19
 Taxa de Acertos: 0.9805928294977867
 
-
+n_components: 35
 Time Elapsed(s): 0:03:43.621199
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1073,7 +1073,7 @@ Falso-Pos:  3423
 Falso-Neg:  23
 Taxa de Acertos: 0.9840274398016177
 
-
+n_components: 35
 Time Elapsed(s): 0:03:49.615795
 Architecure: (50, 10)
 Alpha: 10
@@ -1104,7 +1104,7 @@ Falso-Pos:  26
 Falso-Neg:  41
 Taxa de Acertos: 0.9996894481911516
 
-
+n_components: 21
 Time Elapsed(s): 0:03:58.392777
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1119,7 +1119,7 @@ Falso-Pos:  18
 Falso-Neg:  23
 Taxa de Acertos: 0.9998099608333912
 
-
+n_components: 21
 Time Elapsed(s): 0:04:01.100473
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1134,7 +1134,7 @@ Falso-Pos:  19
 Falso-Neg:  21
 Taxa de Acertos: 0.9998145959350159
 
-
+n_components: 21
 Time Elapsed(s): 0:04:11.551849
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1149,7 +1149,7 @@ Falso-Pos:  1191
 Falso-Neg:  188
 Taxa de Acertos: 0.9936081948596723
 
-
+n_components: 21
 Time Elapsed(s): 0:04:18.970963
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1164,7 +1164,7 @@ Falso-Pos:  1209
 Falso-Neg:  124
 Taxa de Acertos: 0.993821409534404
 
-
+n_components: 21
 Time Elapsed(s): 0:04:22.640516
 Architecure: (50, 10)
 Alpha: 1
@@ -1179,7 +1179,7 @@ Falso-Pos:  1756
 Falso-Neg:  214
 Taxa de Acertos: 0.9908688497995318
 
-
+n_components: 21
 Time Elapsed(s): 0:04:32.788463
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1194,7 +1194,7 @@ Falso-Pos:  4171
 Falso-Neg:  19
 Taxa de Acertos: 0.9805789241929129
 
-
+n_components: 21
 Time Elapsed(s): 0:04:40.041013
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1209,7 +1209,7 @@ Falso-Pos:  3680
 Falso-Neg:  23
 Taxa de Acertos: 0.9828362186840947
 
-
+n_components: 21
 Time Elapsed(s): 0:04:43.849982
 Architecure: (50, 10)
 Alpha: 10
@@ -1241,7 +1241,7 @@ Falso-Pos:  14
 Falso-Neg:  5
 Taxa de Acertos: 0.9999119330691325
 
-
+n_components: 49
 Time Elapsed(s): 0:01:33.034584
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1256,7 +1256,7 @@ Falso-Pos:  11
 Falso-Neg:  3
 Taxa de Acertos: 0.9999351085772555
 
-
+n_components: 49
 Time Elapsed(s): 0:01:36.974778
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1271,7 +1271,7 @@ Falso-Pos:  20
 Falso-Neg:  18
 Taxa de Acertos: 0.9998238661382651
 
-
+n_components: 49
 Time Elapsed(s): 0:01:47.930454
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1286,7 +1286,7 @@ Falso-Pos:  1273
 Falso-Neg:  27
 Taxa de Acertos: 0.993974367888016
 
-
+n_components: 49
 Time Elapsed(s): 0:02:11.325138
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1301,7 +1301,7 @@ Falso-Pos:  1324
 Falso-Neg:  101
 Taxa de Acertos: 0.9933949801849405
 
-
+n_components: 49
 Time Elapsed(s): 0:02:17.636308
 Architecure: (50, 10)
 Alpha: 1
@@ -1316,7 +1316,7 @@ Falso-Pos:  1641
 Falso-Neg:  34
 Taxa de Acertos: 0.9922362047787898
 
-
+n_components: 49
 Time Elapsed(s): 0:02:29.601372
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1331,7 +1331,7 @@ Falso-Pos:  3418
 Falso-Neg:  22
 Taxa de Acertos: 0.9840552504113653
 
-
+n_components: 49
 Time Elapsed(s): 0:02:40.477419
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1346,7 +1346,7 @@ Falso-Pos:  2877
 Falso-Neg:  28
 Taxa de Acertos: 0.986535029780528
 
-
+n_components: 49
 Time Elapsed(s): 0:02:46.052332
 Architecure: (50, 10)
 Alpha: 10
@@ -1377,7 +1377,7 @@ Falso-Pos:  17
 Falso-Neg:  6
 Taxa de Acertos: 0.9998933926626341
 
-
+n_components: 35
 Time Elapsed(s): 0:02:55.569374
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1392,7 +1392,7 @@ Falso-Pos:  15
 Falso-Neg:  5
 Taxa de Acertos: 0.999907297967508
 
-
+n_components: 35
 Time Elapsed(s): 0:02:59.493900
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1407,7 +1407,7 @@ Falso-Pos:  20
 Falso-Neg:  18
 Taxa de Acertos: 0.9998238661382651
 
-
+n_components: 35
 Time Elapsed(s): 0:03:11.832552
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1422,7 +1422,7 @@ Falso-Pos:  1023
 Falso-Neg:  37
 Taxa de Acertos: 0.9950867922779207
 
-
+n_components: 35
 Time Elapsed(s): 0:03:23.615370
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1437,7 +1437,7 @@ Falso-Pos:  1371
 Falso-Neg:  34
 Taxa de Acertos: 0.9934876822174327
 
-
+n_components: 35
 Time Elapsed(s): 0:03:29.475711
 Architecure: (50, 10)
 Alpha: 1
@@ -1452,7 +1452,7 @@ Falso-Pos:  1645
 Falso-Neg:  103
 Taxa de Acertos: 0.9918978423601937
 
-
+n_components: 35
 Time Elapsed(s): 0:03:42.771181
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1467,7 +1467,7 @@ Falso-Pos:  3646
 Falso-Neg:  18
 Taxa de Acertos: 0.9830169876474542
 
-
+n_components: 35
 Time Elapsed(s): 0:03:51.880052
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1482,7 +1482,7 @@ Falso-Pos:  3742
 Falso-Neg:  18
 Taxa de Acertos: 0.9825720178914923
 
-
+n_components: 35
 Time Elapsed(s): 0:03:56.572045
 Architecure: (50, 10)
 Alpha: 10
@@ -1513,7 +1513,7 @@ Falso-Pos:  17
 Falso-Neg:  7
 Taxa de Acertos: 0.9998887575610095
 
-
+n_components: 21
 Time Elapsed(s): 0:04:06.649531
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1528,7 +1528,7 @@ Falso-Pos:  17
 Falso-Neg:  7
 Taxa de Acertos: 0.9998887575610095
 
-
+n_components: 21
 Time Elapsed(s): 0:04:09.328579
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1543,7 +1543,7 @@ Falso-Pos:  27
 Falso-Neg:  21
 Taxa de Acertos: 0.9997775151220191
 
-
+n_components: 21
 Time Elapsed(s): 0:04:21.365799
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1558,7 +1558,7 @@ Falso-Pos:  1186
 Falso-Neg:  23
 Taxa de Acertos: 0.9943961621358548
 
-
+n_components: 21
 Time Elapsed(s): 0:04:28.440220
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1573,7 +1573,7 @@ Falso-Pos:  876
 Falso-Neg:  266
 Taxa de Acertos: 0.9947067139447032
 
-
+n_components: 21
 Time Elapsed(s): 0:04:32.688590
 Architecure: (50, 10)
 Alpha: 1
@@ -1588,7 +1588,7 @@ Falso-Pos:  1650
 Falso-Neg:  199
 Taxa de Acertos: 0.9914296970961088
 
-
+n_components: 21
 Time Elapsed(s): 0:04:42.954468
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1603,7 +1603,7 @@ Falso-Pos:  4125
 Falso-Neg:  18
 Taxa de Acertos: 0.9807967739692692
 
-
+n_components: 21
 Time Elapsed(s): 0:04:52.635211
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1618,7 +1618,7 @@ Falso-Pos:  3550
 Falso-Neg:  18
 Taxa de Acertos: 0.983461957403416
 
-
+n_components: 21
 Time Elapsed(s): 0:04:56.090757
 Architecure: (50, 10)
 Alpha: 10
@@ -1650,7 +1650,7 @@ Falso-Pos:  17
 Falso-Neg:  32
 Taxa de Acertos: 0.9997728800203944
 
-
+n_components: 49
 Time Elapsed(s): 0:01:31.022901
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1665,7 +1665,7 @@ Falso-Pos:  9
 Falso-Neg:  3
 Taxa de Acertos: 0.9999443787805048
 
-
+n_components: 49
 Time Elapsed(s): 0:01:34.919102
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1680,7 +1680,7 @@ Falso-Pos:  21
 Falso-Neg:  4
 Taxa de Acertos: 0.999884122459385
 
-
+n_components: 49
 Time Elapsed(s): 0:01:43.183754
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1695,7 +1695,7 @@ Falso-Pos:  2224
 Falso-Neg:  17
 Taxa de Acertos: 0.9896127372592645
 
-
+n_components: 49
 Time Elapsed(s): 0:02:06.913744
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1710,7 +1710,7 @@ Falso-Pos:  1735
 Falso-Neg:  17
 Taxa de Acertos: 0.9918793019536953
 
-
+n_components: 49
 Time Elapsed(s): 0:02:11.937713
 Architecure: (50, 10)
 Alpha: 1
@@ -1725,7 +1725,7 @@ Falso-Pos:  2151
 Falso-Neg:  17
 Taxa de Acertos: 0.9899510996778604
 
-
+n_components: 49
 Time Elapsed(s): 0:02:24.678329
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1740,7 +1740,7 @@ Falso-Pos:  4401
 Falso-Neg:  17
 Taxa de Acertos: 0.9795221210225035
 
-
+n_components: 49
 Time Elapsed(s): 0:02:35.979372
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1755,7 +1755,7 @@ Falso-Pos:  4432
 Falso-Neg:  17
 Taxa de Acertos: 0.9793784328721408
 
-
+n_components: 49
 Time Elapsed(s): 0:02:41.065491
 Architecure: (50, 10)
 Alpha: 10
@@ -1786,7 +1786,7 @@ Falso-Pos:  22
 Falso-Neg:  4
 Taxa de Acertos: 0.9998794873577603
 
-
+n_components: 35
 Time Elapsed(s): 0:02:51.382942
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1801,7 +1801,7 @@ Falso-Pos:  30
 Falso-Neg:  32
 Taxa de Acertos: 0.9997126236992746
 
-
+n_components: 35
 Time Elapsed(s): 0:02:55.755077
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1816,7 +1816,7 @@ Falso-Pos:  77
 Falso-Neg:  5
 Taxa de Acertos: 0.9996199216667826
 
-
+n_components: 35
 Time Elapsed(s): 0:03:05.555766
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1831,7 +1831,7 @@ Falso-Pos:  1542
 Falso-Neg:  17
 Taxa de Acertos: 0.9927738765672437
 
-
+n_components: 35
 Time Elapsed(s): 0:03:16.144926
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1846,7 +1846,7 @@ Falso-Pos:  1558
 Falso-Neg:  17
 Taxa de Acertos: 0.9926997149412501
 
-
+n_components: 35
 Time Elapsed(s): 0:03:21.595673
 Architecure: (50, 10)
 Alpha: 1
@@ -1861,7 +1861,7 @@ Falso-Pos:  2224
 Falso-Neg:  17
 Taxa de Acertos: 0.9896127372592645
 
-
+n_components: 35
 Time Elapsed(s): 0:03:31.420761
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -1876,7 +1876,7 @@ Falso-Pos:  4399
 Falso-Neg:  17
 Taxa de Acertos: 0.9795313912257526
 
-
+n_components: 35
 Time Elapsed(s): 0:03:42.492013
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -1891,7 +1891,7 @@ Falso-Pos:  4108
 Falso-Neg:  17
 Taxa de Acertos: 0.9808802057985121
 
-
+n_components: 35
 Time Elapsed(s): 0:03:47.199595
 Architecure: (50, 10)
 Alpha: 10
@@ -1922,7 +1922,7 @@ Falso-Pos:  29
 Falso-Neg:  3
 Taxa de Acertos: 0.9998516767480127
 
-
+n_components: 21
 Time Elapsed(s): 0:03:58.449721
 Architecure: (100, 50, 10)
 Alpha: 0.001
@@ -1937,7 +1937,7 @@ Falso-Pos:  38
 Falso-Neg:  3
 Taxa de Acertos: 0.9998099608333912
 
-
+n_components: 21
 Time Elapsed(s): 0:04:01.728813
 Architecure: (50, 10)
 Alpha: 0.001
@@ -1952,7 +1952,7 @@ Falso-Pos:  37
 Falso-Neg:  3
 Taxa de Acertos: 0.9998145959350159
 
-
+n_components: 21
 Time Elapsed(s): 0:04:13.461282
 Architecure: (100, 100, 10)
 Alpha: 1
@@ -1967,7 +1967,7 @@ Falso-Pos:  1328
 Falso-Neg:  17
 Taxa de Acertos: 0.9937657883149088
 
-
+n_components: 21
 Time Elapsed(s): 0:04:22.090502
 Architecure: (100, 50, 10)
 Alpha: 1
@@ -1982,7 +1982,7 @@ Falso-Pos:  1812
 Falso-Neg:  17
 Taxa de Acertos: 0.9915223991286009
 
-
+n_components: 21
 Time Elapsed(s): 0:04:26.177301
 Architecure: (50, 10)
 Alpha: 1
@@ -1997,7 +1997,7 @@ Falso-Pos:  2105
 Falso-Neg:  17
 Taxa de Acertos: 0.9901643143525922
 
-
+n_components: 21
 Time Elapsed(s): 0:04:39.257292
 Architecure: (100, 100, 10)
 Alpha: 10
@@ -2012,7 +2012,7 @@ Falso-Pos:  4649
 Falso-Neg:  17
 Taxa de Acertos: 0.9783726158196019
 
-
+n_components: 21
 Time Elapsed(s): 0:04:47.265001
 Architecure: (100, 50, 10)
 Alpha: 10
@@ -2027,7 +2027,7 @@ Falso-Pos:  4345
 Falso-Neg:  17
 Taxa de Acertos: 0.9797816867134812
 
-
+n_components: 21
 Time Elapsed(s): 0:04:50.549268
 Architecure: (50, 10)
 Alpha: 10
