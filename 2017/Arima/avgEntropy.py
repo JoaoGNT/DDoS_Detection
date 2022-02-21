@@ -187,18 +187,6 @@ for mod in range(0, len(model_order)):
     plt.savefig(','.join([str(value) for value in model.order]))
     plt.clf()
     # -------------------------------- END STEP 6 -----------------------------------------#
-# print(vecacertos)
-# print(len(vecacertos))
-# print(vecerros)
-# print(len(vecerros))
-# print(vecfalso_positivo)
-# print(len(vecfalso_positivo))
-# print(vecpositivo_falso)
-# print(len(vecpositivo_falso))
-# print(vectaxa_acerto)
-# print(len(vectaxa_acerto))
-# print(order)
-# print(len(order))
 
 d = {'Order': model_order, 'Acertos': vecacertos, 'Erros': vecerros, 'Verdadeiro_Positivo': vecverd_positivo,
       'Verdadeiro_Negativo': vecverd_negativo, 'Falso_Positivo':vecfalso_positivo, 'Falso_Negativo':vecfalso_negativo,

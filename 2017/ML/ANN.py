@@ -42,12 +42,13 @@ architecture = [(100, 100, 10), (100,50,10), (50,10)]
 
 for n in range(0,randomlist.nTest):
     print('Test:', n)
-    begining_training = datetime.now()
+
     min_max_scaler = preprocessing.MinMaxScaler()
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for a in range(0, len(alpha)):
         for arc in range(0, len(architecture)):
+            begining_training = datetime.now()
             clf = MLPClassifier(solver='adam', alpha=alpha[a], hidden_layer_sizes=architecture[arc], random_state=1)
             clf.fit(tra, traininglabels[n])
             results = clf.predict(tst)

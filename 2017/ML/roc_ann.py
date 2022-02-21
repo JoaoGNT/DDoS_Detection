@@ -5,7 +5,7 @@ def resultsann(path):
 
     dataset = []
     wb = Workbook()
-    wb.save(filename="C:/Users/joao.teles/projects/DDoS_Detection/2017/ML/roc/roc_ann.xlsx")
+    wb.save(filename="C:/Users/jg_te/PycharmProjects/DDoS_Detection/2017/ML/roc/roc_ann.xlsx")
     std = wb['Sheet']
     wb.remove(std)
     with open(path) as f:
@@ -18,7 +18,6 @@ def resultsann(path):
     for i in range(0,len(lines)-1):
         lines[i] = lines[i].strip()
 
-    data_v = []
 
     for elem in lines:
         if re.match('.*Test:.*', elem) != None or elem == '':
@@ -31,6 +30,7 @@ def resultsann(path):
 
     lines.pop()
     splited = []
+
 
     for i in range(45):
         start = int(i*len(lines)/45)
@@ -48,14 +48,13 @@ def resultsann(path):
         splited_test.append(splited[start:end])
 
     dfvec  = []
-    test_vec=[]
     for i in range(0,len(splited_test)):
         # test_vec.append('Test '+format(i))
         test_name = 'Test '+format(i)
         dfvec.append(pd.DataFrame(splited_test[i], columns=['Time(s)', 'Architecture', 'Alpha', 'Quant. de Ataques',
                                             'Quant. de Ataques', 'Quant. Ataques Total', 'Acertos', 'Verd-Pos',
                                             'Verd-Neg', 'Erros', 'Falso-Pos', 'Falso-Neg', 'Taxa de Acertos']))
-        with pd.ExcelWriter('C:/Users/joao.teles/projects/DDoS_Detection/2017/ML/roc/roc_ann.xlsx',mode='a') as writer:
+        with pd.ExcelWriter('C:/Users/jg_te/PycharmProjects/DDoS_Detection/2017/ML/roc/roc_ann.xlsx',mode='a') as writer:
             dfvec[i].to_excel(writer, sheet_name=test_name)
 
 
@@ -67,7 +66,7 @@ def resultsannpca(path):
 
     dataset = []
     wb = Workbook()
-    wb.save(filename="C:/Users/joao.teles/projects/DDoS_Detection/2017/ML/roc/roc_annpca.xlsx")
+    wb.save(filename="C:/Users/jg_te/PycharmProjects/DDoS_Detection/2017/ML/roc/roc_annpca.xlsx")
     std = wb['Sheet']
     wb.remove(std)
     with open(path) as f:
@@ -117,8 +116,8 @@ def resultsannpca(path):
         dfvec.append(pd.DataFrame(splited_test[i], columns=['n_comp','Time(s)', 'Architecture', 'Alpha', 'Quant. de Ataques',
                                             'Quant. de Ataques', 'Quant. Ataques Total', 'Acertos', 'Verd-Pos',
                                             'Verd-Neg', 'Erros', 'Falso-Pos', 'Falso-Neg', 'Taxa de Acertos']))
-        with pd.ExcelWriter('C:/Users/joao.teles/projects/DDoS_Detection/2017/ML/roc/roc_annpca.xlsx',mode='a') as writer:
+        with pd.ExcelWriter('C:/Users/jg_te/PycharmProjects/DDoS_Detection/2017/ML/roc/roc_annpca.xlsx',mode='a') as writer:
             dfvec[i].to_excel(writer, sheet_name=test_name)
 
-resultsann('C:/Users/joao.teles/projects/DDoS_Detection/2017/ML/results/ANNresults.txt')
-resultsannpca('C:/Users/joao.teles/projects/DDoS_Detection/2017/ML/results/ANNPCAresults.txt')
+resultsann('C:/Users/jg_te/PycharmProjects/DDoS_Detection/2017/ML/results/ANNresults.txt')
+resultsannpca('C:/Users/jg_te/PycharmProjects/DDoS_Detection/2017/ML/results/ANNPCAresults.txt')
