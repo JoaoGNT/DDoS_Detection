@@ -1,5 +1,5 @@
 Test: 0
-Time Elapsed(s): 0:01:13.961540
+Time Elapsed(s): 0:01:28.209792
 Architecure: (100, 100, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122423
@@ -14,7 +14,7 @@ Falso-Neg:  595
 Taxa de Acertos: 0.9971169667894969
 
 
-Time Elapsed(s): 0:01:23.282294
+Time Elapsed(s): 0:01:18.337534
 Architecure: (100, 50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122423
@@ -29,7 +29,7 @@ Falso-Neg:  228
 Taxa de Acertos: 0.9988458596954738
 
 
-Time Elapsed(s): 0:01:31.027271
+Time Elapsed(s): 0:01:17.057270
 Architecure: (50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122423
@@ -44,7 +44,7 @@ Falso-Neg:  759
 Taxa de Acertos: 0.9961621358548286
 
 
-Time Elapsed(s): 0:01:46.284016
+Time Elapsed(s): 0:01:36.426553
 Architecure: (100, 100, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122423
@@ -59,7 +59,7 @@ Falso-Neg:  23
 Taxa de Acertos: 0.9922593802869127
 
 
-Time Elapsed(s): 0:01:54.465359
+Time Elapsed(s): 0:01:18.541635
 Architecure: (100, 50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122423
@@ -74,7 +74,7 @@ Falso-Neg:  86
 Taxa de Acertos: 0.99305198266472
 
 
-Time Elapsed(s): 0:02:00.135954
+Time Elapsed(s): 0:01:14.632033
 Architecure: (50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122423
@@ -89,7 +89,7 @@ Falso-Neg:  36
 Taxa de Acertos: 0.9914482375026072
 
 
-Time Elapsed(s): 0:02:14.236431
+Time Elapsed(s): 0:01:29.535221
 Architecure: (100, 100, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122423
@@ -104,7 +104,7 @@ Falso-Neg:  20
 Taxa de Acertos: 0.981033164152124
 
 
-Time Elapsed(s): 0:02:23.564510
+Time Elapsed(s): 0:01:19.512810
 Architecure: (100, 50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122423
@@ -119,7 +119,7 @@ Falso-Neg:  23
 Taxa de Acertos: 0.9829891770377065
 
 
-Time Elapsed(s): 0:02:29.652104
+Time Elapsed(s): 0:01:14.339992
 Architecure: (50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122423
@@ -135,7 +135,7 @@ Taxa de Acertos: 0.9793459871607685
 
 
 Test: 1
-Time Elapsed(s): 0:01:11.579696
+Time Elapsed(s): 0:01:23.265621
 Architecure: (100, 100, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122363
@@ -150,7 +150,7 @@ Falso-Neg:  1618
 Taxa de Acertos: 0.9924540545551461
 
 
-Time Elapsed(s): 0:01:18.236665
+Time Elapsed(s): 0:01:16.419826
 Architecure: (100, 50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122363
@@ -165,7 +165,7 @@ Falso-Neg:  930
 Taxa de Acertos: 0.9956476395744976
 
 
-Time Elapsed(s): 0:01:26.211093
+Time Elapsed(s): 0:01:23.324650
 Architecure: (50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122363
@@ -180,7 +180,7 @@ Falso-Neg:  1458
 Taxa de Acertos: 0.9932095761199564
 
 
-Time Elapsed(s): 0:01:40.367186
+Time Elapsed(s): 0:01:32.938651
 Architecure: (100, 100, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122363
@@ -195,7 +195,7 @@ Falso-Neg:  47
 Taxa de Acertos: 0.9943220005098612
 
 
-Time Elapsed(s): 0:01:51.443651
+Time Elapsed(s): 0:01:20.796066
 Architecure: (100, 50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122363
@@ -210,7 +210,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.9929824561403509
 
 
-Time Elapsed(s): 0:01:57.758752
+Time Elapsed(s): 0:01:15.143233
 Architecure: (50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122363
@@ -225,7 +225,7 @@ Falso-Neg:  24
 Taxa de Acertos: 0.9921991239657929
 
 
-Time Elapsed(s): 0:02:09.946177
+Time Elapsed(s): 0:01:28.546225
 Architecure: (100, 100, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122363
@@ -240,7 +240,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.984898838907043
 
 
-Time Elapsed(s): 0:02:17.920987
+Time Elapsed(s): 0:01:17.192620
 Architecure: (100, 50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122363
@@ -255,7 +255,7 @@ Falso-Neg:  18
 Taxa de Acertos: 0.982854759090593
 
 
-Time Elapsed(s): 0:02:24.570494
+Time Elapsed(s): 0:01:19.365789
 Architecure: (50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122363
@@ -271,7 +271,7 @@ Taxa de Acertos: 0.9792718255347749
 
 
 Test: 2
-Time Elapsed(s): 0:01:13.402871
+Time Elapsed(s): 0:01:28.865344
 Architecure: (100, 100, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122401
@@ -286,7 +286,7 @@ Falso-Neg:  2438
 Taxa de Acertos: 0.9886671765278454
 
 
-Time Elapsed(s): 0:01:21.138594
+Time Elapsed(s): 0:01:27.918400
 Architecure: (100, 50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122401
@@ -301,7 +301,7 @@ Falso-Neg:  1825
 Taxa de Acertos: 0.9915223991286009
 
 
-Time Elapsed(s): 0:01:28.881609
+Time Elapsed(s): 0:01:25.795738
 Architecure: (50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122401
@@ -316,7 +316,7 @@ Falso-Neg:  148
 Taxa de Acertos: 0.9989849127442119
 
 
-Time Elapsed(s): 0:01:42.652615
+Time Elapsed(s): 0:01:32.288200
 Architecure: (100, 100, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122401
@@ -331,7 +331,7 @@ Falso-Neg:  37
 Taxa de Acertos: 0.9934413312011866
 
 
-Time Elapsed(s): 0:01:52.924530
+Time Elapsed(s): 0:01:27.417606
 Architecure: (100, 50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122401
@@ -346,7 +346,7 @@ Falso-Neg:  967
 Taxa de Acertos: 0.9907483371572922
 
 
-Time Elapsed(s): 0:01:59.239347
+Time Elapsed(s): 0:01:18.898111
 Architecure: (50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122401
@@ -361,7 +361,7 @@ Falso-Neg:  31
 Taxa de Acertos: 0.9919024774618184
 
 
-Time Elapsed(s): 0:02:11.079668
+Time Elapsed(s): 0:01:29.200719
 Architecure: (100, 100, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122401
@@ -376,7 +376,7 @@ Falso-Neg:  25
 Taxa de Acertos: 0.9837678741106399
 
 
-Time Elapsed(s): 0:02:20.069240
+Time Elapsed(s): 0:01:26.370477
 Architecure: (100, 50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122401
@@ -391,7 +391,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.981278824538228
 
 
-Time Elapsed(s): 0:02:26.165409
+Time Elapsed(s): 0:01:18.454221
 Architecure: (50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122401
@@ -407,7 +407,7 @@ Taxa de Acertos: 0.9806808964286542
 
 
 Test: 3
-Time Elapsed(s): 0:01:13.777790
+Time Elapsed(s): 0:01:26.960824
 Architecure: (100, 100, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122407
@@ -422,7 +422,7 @@ Falso-Neg:  37
 Taxa de Acertos: 0.9997172588008992
 
 
-Time Elapsed(s): 0:01:22.501803
+Time Elapsed(s): 0:01:23.684252
 Architecure: (100, 50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122407
@@ -437,7 +437,7 @@ Falso-Neg:  32
 Taxa de Acertos: 0.9995921110570349
 
 
-Time Elapsed(s): 0:01:30.640646
+Time Elapsed(s): 0:01:26.651809
 Architecure: (50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122407
@@ -452,7 +452,7 @@ Falso-Neg:  26
 Taxa de Acertos: 0.9996570024797794
 
 
-Time Elapsed(s): 0:01:44.968308
+Time Elapsed(s): 0:01:31.784785
 Architecure: (100, 100, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122407
@@ -467,7 +467,7 @@ Falso-Neg:  54
 Taxa de Acertos: 0.994359081322858
 
 
-Time Elapsed(s): 0:01:53.723617
+Time Elapsed(s): 0:01:25.591420
 Architecure: (100, 50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122407
@@ -482,7 +482,7 @@ Falso-Neg:  21
 Taxa de Acertos: 0.9934552365060604
 
 
-Time Elapsed(s): 0:02:00.403661
+Time Elapsed(s): 0:01:19.282663
 Architecure: (50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122407
@@ -497,7 +497,7 @@ Falso-Neg:  32
 Taxa de Acertos: 0.9917031680919605
 
 
-Time Elapsed(s): 0:02:14.506578
+Time Elapsed(s): 0:01:32.671609
 Architecure: (100, 100, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122407
@@ -512,7 +512,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.9845697466916962
 
 
-Time Elapsed(s): 0:02:22.622596
+Time Elapsed(s): 0:01:24.725200
 Architecure: (100, 50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122407
@@ -527,7 +527,7 @@ Falso-Neg:  18
 Taxa de Acertos: 0.9823588032167605
 
 
-Time Elapsed(s): 0:02:27.318714
+Time Elapsed(s): 0:01:17.302310
 Architecure: (50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122407
@@ -543,7 +543,7 @@ Taxa de Acertos: 0.9798697536443487
 
 
 Test: 4
-Time Elapsed(s): 0:01:11.205806
+Time Elapsed(s): 0:01:23.429420
 Architecure: (100, 100, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122340
@@ -558,7 +558,7 @@ Falso-Neg:  30
 Taxa de Acertos: 0.9993510857725556
 
 
-Time Elapsed(s): 0:01:19.054931
+Time Elapsed(s): 0:01:21.405881
 Architecure: (100, 50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122340
@@ -573,7 +573,7 @@ Falso-Neg:  66
 Taxa de Acertos: 0.9992769241465619
 
 
-Time Elapsed(s): 0:01:28.837775
+Time Elapsed(s): 0:01:23.250422
 Architecure: (50, 10)
 Alpha: 0.001
 Quant. de Ataques - Teste : 122340
@@ -588,7 +588,7 @@ Falso-Neg:  31
 Taxa de Acertos: 0.9991564115043222
 
 
-Time Elapsed(s): 0:01:40.963338
+Time Elapsed(s): 0:01:28.831166
 Architecure: (100, 100, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122340
@@ -603,7 +603,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9901179633363462
 
 
-Time Elapsed(s): 0:01:48.893736
+Time Elapsed(s): 0:01:23.260658
 Architecure: (100, 50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122340
@@ -618,7 +618,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9910171730515192
 
 
-Time Elapsed(s): 0:01:55.029735
+Time Elapsed(s): 0:01:19.610317
 Architecure: (50, 10)
 Alpha: 1
 Quant. de Ataques - Teste : 122340
@@ -633,7 +633,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9900113559989803
 
 
-Time Elapsed(s): 0:02:06.462109
+Time Elapsed(s): 0:01:28.637879
 Architecure: (100, 100, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122340
@@ -648,7 +648,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9788361259820622
 
 
-Time Elapsed(s): 0:02:17.607884
+Time Elapsed(s): 0:01:29.896194
 Architecure: (100, 50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122340
@@ -663,7 +663,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.980870935595263
 
 
-Time Elapsed(s): 0:02:23.080619
+Time Elapsed(s): 0:01:18.401986
 Architecure: (50, 10)
 Alpha: 10
 Quant. de Ataques - Teste : 122340

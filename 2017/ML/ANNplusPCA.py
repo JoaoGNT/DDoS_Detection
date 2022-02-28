@@ -44,23 +44,24 @@ components = [49, 35, 21]
 
 for n in range(0,randomlist.nTest):
     print('Test:', n)
-    begining_training = datetime.now()
+
     min_max_scaler = preprocessing.MinMaxScaler()
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
+        begining_training = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
-
+        end_training = datetime.now()
         for a in range(0,len(alpha)):
             for arc in range(0,len(architecture)):
                 clf = MLPClassifier(solver='adam', alpha=alpha[a], hidden_layer_sizes=architecture[arc], random_state=1)
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
-                end_training = datetime.now()
+
                 counter = 0
                 c = 0
                 verd_positivo = 0

@@ -42,30 +42,31 @@ degree = [2,3,4]
 gamma = [10 ** (-1), 1, 10 ** (2)]
 #components = 70
 components = [49, 35, 21]
-
+'''
 ## ------------ LINEAR
 print('LINEAR')
 
 for n in range(0,randomlist.nTest):
     print('Test:', n)
-    begining_training = datetime.now()
+
     min_max_scaler = preprocessing.MinMaxScaler()
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
+        begining_training = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
-
+        end_training = datetime.now()
         for l in range(0,len(C)):
 
             clf = svm.SVC(C=C[l],kernel='linear',random_state=1,class_weight={0:1,1:3})
             clf.fit(tra, traininglabels[n])
             results = clf.predict(tst)
 
-            end_training = datetime.now()
+
             counter = 0
             c = 0
             verd_positivo = 0
@@ -111,24 +112,25 @@ for n in range(0,randomlist.nTest):
             print("Falso-Pos: ", falso_positivo)
             print("Falso-Neg: ", falso_negativo)
             print("Taxa de Acertos:", counter / len(results), "\n\n")
-
+'''
 ### --- End Linear
 
     ## ------------ RBF
 print('RBF')
 for n in range(0,randomlist.nTest):
     print('Test:', n)
-    begining_training = datetime.now()
+
     min_max_scaler = preprocessing.MinMaxScaler()
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
+        begining_training = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
-
+        end_training = datetime.now()
         for l in range(0,len(C)):
             for g in range(0,len(gamma)):
 
@@ -136,7 +138,7 @@ for n in range(0,randomlist.nTest):
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
 
-                end_training = datetime.now()
+
                 counter = 0
                 c = 0
                 verd_positivo = 0
@@ -190,16 +192,18 @@ for n in range(0,randomlist.nTest):
 print('Poly')
 for n in range(0,randomlist.nTest):
     print('Test:', n)
-    begining_training = datetime.now()
+
     min_max_scaler = preprocessing.MinMaxScaler()
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
+        begining_training = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
+        end_training = datetime.now()
         for l in range(0,len(C)):
             for d in range(0,len(degree)):
 
@@ -207,7 +211,7 @@ for n in range(0,randomlist.nTest):
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
 
-                end_training = datetime.now()
+
                 counter = 0
                 c = 0
                 verd_positivo = 0
