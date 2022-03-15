@@ -1,6 +1,6 @@
 Test: 0
 n_components: 49
-Time Elapsed(s): 0:04:30.010111
+Time Elapsed(s): 0:03:33.770420
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -15,7 +15,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5674430461887877
 
 
-Time Elapsed(s): 0:07:56.846762
+Time Elapsed(s): 0:03:33.567083
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -30,7 +30,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7765185751697606
 
 
-Time Elapsed(s): 0:12:03.864957
+Time Elapsed(s): 0:03:53.970005
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -45,7 +45,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5674430461887877
 
 
-Time Elapsed(s): 0:12:16.106834
+Time Elapsed(s): 0:00:51.165392
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -60,7 +60,7 @@ Falso-Neg:  23
 Taxa de Acertos: 0.9916521819740898
 
 
-Time Elapsed(s): 0:12:25.815906
+Time Elapsed(s): 0:00:49.001190
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -75,7 +75,7 @@ Falso-Neg:  30
 Taxa de Acertos: 0.9981413242485342
 
 
-Time Elapsed(s): 0:14:43.711296
+Time Elapsed(s): 0:02:32.385480
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -90,7 +90,7 @@ Falso-Neg:  122423
 Taxa de Acertos: 0.4325569538112123
 
 
-Time Elapsed(s): 0:14:44.846281
+Time Elapsed(s): 0:00:44.173400
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -105,7 +105,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.9997914204268928
 
 
-Time Elapsed(s): 0:14:49.821332
+Time Elapsed(s): 0:00:46.145136
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -120,7 +120,7 @@ Falso-Neg:  39
 Taxa de Acertos: 0.9998099608333912
 
 
-Time Elapsed(s): 0:17:24.030008
+Time Elapsed(s): 0:02:33.459778
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -136,7 +136,7 @@ Taxa de Acertos: 0.4325569538112123
 
 
 n_components: 35
-Time Elapsed(s): 0:04:39.117395
+Time Elapsed(s): 0:03:19.983897
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -151,7 +151,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5674430461887877
 
 
-Time Elapsed(s): 0:08:25.036253
+Time Elapsed(s): 0:03:22.931421
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -166,7 +166,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7765232102713852
 
 
-Time Elapsed(s): 0:12:57.178329
+Time Elapsed(s): 0:03:48.806129
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -181,7 +181,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5674430461887877
 
 
-Time Elapsed(s): 0:13:09.990881
+Time Elapsed(s): 0:00:50.889399
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -196,7 +196,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.9916243713643421
 
 
-Time Elapsed(s): 0:13:20.221286
+Time Elapsed(s): 0:00:50.853791
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -211,7 +211,7 @@ Falso-Neg:  29
 Taxa de Acertos: 0.9981644997566572
 
 
-Time Elapsed(s): 0:15:45.576067
+Time Elapsed(s): 0:02:25.464971
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -226,7 +226,7 @@ Falso-Neg:  122423
 Taxa de Acertos: 0.4325569538112123
 
 
-Time Elapsed(s): 0:15:46.690431
+Time Elapsed(s): 0:00:44.691634
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -241,7 +241,7 @@ Falso-Neg:  23
 Taxa de Acertos: 0.9998006906301421
 
 
-Time Elapsed(s): 0:15:51.797904
+Time Elapsed(s): 0:00:46.207751
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -256,7 +256,7 @@ Falso-Neg:  39
 Taxa de Acertos: 0.9998099608333912
 
 
-Time Elapsed(s): 0:18:01.848977
+Time Elapsed(s): 0:02:28.438884
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -272,7 +272,7 @@ Taxa de Acertos: 0.4325569538112123
 
 
 n_components: 21
-Time Elapsed(s): 0:03:56.364384
+Time Elapsed(s): 0:03:20.475335
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -287,7 +287,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5674430461887877
 
 
-Time Elapsed(s): 0:07:03.526183
+Time Elapsed(s): 0:03:22.783658
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -302,7 +302,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7794340540916359
 
 
-Time Elapsed(s): 0:10:57.030911
+Time Elapsed(s): 0:03:51.249866
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -317,7 +317,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5674430461887877
 
 
-Time Elapsed(s): 0:11:06.383531
+Time Elapsed(s): 0:00:50.073334
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -332,7 +332,7 @@ Falso-Neg:  20
 Taxa de Acertos: 0.9909800922385223
 
 
-Time Elapsed(s): 0:11:15.670051
+Time Elapsed(s): 0:00:48.526369
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -347,7 +347,7 @@ Falso-Neg:  40
 Taxa de Acertos: 0.9981923103664048
 
 
-Time Elapsed(s): 0:13:25.447084
+Time Elapsed(s): 0:02:20.058354
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122423
@@ -362,7 +362,7 @@ Falso-Neg:  120841
 Taxa de Acertos: 0.43988968458133443
 
 
-Time Elapsed(s): 0:13:27.367180
+Time Elapsed(s): 0:00:43.547217
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122423
@@ -377,7 +377,7 @@ Falso-Neg:  20
 Taxa de Acertos: 0.9997265290041484
 
 
-Time Elapsed(s): 0:13:29.882074
+Time Elapsed(s): 0:00:44.911606
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122423
@@ -392,24 +392,24 @@ Falso-Neg:  77
 Taxa de Acertos: 0.999615286565158
 
 
-Time Elapsed(s): 0:15:37.144868
+Time Elapsed(s): 0:02:17.950682
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122423
 Quant. de Ataques - Training : 5604
 Quant. Ataques Total:  128027
-Acertos:  94899
-Verd-Pos:  1577
+Acertos:  94900
+Verd-Pos:  1578
 Verd-Neg:  93322
-Erros:  120846
+Erros:  120845
 Falso-Pos:  0
-Falso-Neg:  120846
-Taxa de Acertos: 0.43986650907321145
+Falso-Neg:  120845
+Taxa de Acertos: 0.439871144174836
 
 
 Test: 1
 n_components: 49
-Time Elapsed(s): 0:04:29.550196
+Time Elapsed(s): 0:03:27.100143
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -424,7 +424,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5671649400913115
 
 
-Time Elapsed(s): 0:08:11.202780
+Time Elapsed(s): 0:03:26.995508
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -439,7 +439,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7722913624881226
 
 
-Time Elapsed(s): 0:12:36.358171
+Time Elapsed(s): 0:03:51.850918
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -454,7 +454,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5671649400913115
 
 
-Time Elapsed(s): 0:12:48.522214
+Time Elapsed(s): 0:00:50.734174
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -469,7 +469,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.9919441933764398
 
 
-Time Elapsed(s): 0:12:59.845831
+Time Elapsed(s): 0:00:52.577035
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -484,7 +484,7 @@ Falso-Neg:  49
 Taxa de Acertos: 0.9977658810169413
 
 
-Time Elapsed(s): 0:15:30.639083
+Time Elapsed(s): 0:02:34.565957
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -499,7 +499,7 @@ Falso-Neg:  122363
 Taxa de Acertos: 0.4328350599086885
 
 
-Time Elapsed(s): 0:15:33.627446
+Time Elapsed(s): 0:00:43.902748
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -514,7 +514,7 @@ Falso-Neg:  34
 Taxa de Acertos: 0.9998006906301421
 
 
-Time Elapsed(s): 0:15:38.246813
+Time Elapsed(s): 0:00:46.955449
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -529,7 +529,7 @@ Falso-Neg:  45
 Taxa de Acertos: 0.999754339613896
 
 
-Time Elapsed(s): 0:18:06.345455
+Time Elapsed(s): 0:02:33.701958
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -545,7 +545,7 @@ Taxa de Acertos: 0.4328350599086885
 
 
 n_components: 35
-Time Elapsed(s): 0:04:18.815056
+Time Elapsed(s): 0:03:19.851063
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -560,7 +560,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5671649400913115
 
 
-Time Elapsed(s): 0:07:48.364445
+Time Elapsed(s): 0:03:17.544818
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -575,7 +575,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.772870750191198
 
 
-Time Elapsed(s): 0:11:55.161984
+Time Elapsed(s): 0:03:50.990777
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -590,7 +590,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5671649400913115
 
 
-Time Elapsed(s): 0:12:06.321570
+Time Elapsed(s): 0:00:51.903046
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -605,7 +605,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.9919441933764398
 
 
-Time Elapsed(s): 0:12:17.375715
+Time Elapsed(s): 0:00:51.337799
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -620,7 +620,7 @@ Falso-Neg:  47
 Taxa de Acertos: 0.9977705161185659
 
 
-Time Elapsed(s): 0:14:35.880527
+Time Elapsed(s): 0:02:24.815568
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -635,7 +635,7 @@ Falso-Neg:  122363
 Taxa de Acertos: 0.4328350599086885
 
 
-Time Elapsed(s): 0:14:38.601236
+Time Elapsed(s): 0:00:43.765543
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -650,7 +650,7 @@ Falso-Neg:  33
 Taxa de Acertos: 0.9998053257317666
 
 
-Time Elapsed(s): 0:14:44.838981
+Time Elapsed(s): 0:00:46.412190
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -665,7 +665,7 @@ Falso-Neg:  43
 Taxa de Acertos: 0.9997636098171453
 
 
-Time Elapsed(s): 0:17:03.595994
+Time Elapsed(s): 0:02:24.902013
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -681,7 +681,7 @@ Taxa de Acertos: 0.4328350599086885
 
 
 n_components: 21
-Time Elapsed(s): 0:04:04.921298
+Time Elapsed(s): 0:03:14.330930
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -696,7 +696,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5671649400913115
 
 
-Time Elapsed(s): 0:07:26.822657
+Time Elapsed(s): 0:03:21.543801
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -711,7 +711,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.77646758905189
 
 
-Time Elapsed(s): 0:11:22.199082
+Time Elapsed(s): 0:03:43.277005
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -726,7 +726,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5671649400913115
 
 
-Time Elapsed(s): 0:11:34.105143
+Time Elapsed(s): 0:00:51.190272
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -741,7 +741,7 @@ Falso-Neg:  18
 Taxa de Acertos: 0.991100604880762
 
 
-Time Elapsed(s): 0:11:44.454147
+Time Elapsed(s): 0:00:48.476224
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -756,7 +756,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.9982664719923985
 
 
-Time Elapsed(s): 0:13:48.680366
+Time Elapsed(s): 0:02:22.015523
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -771,7 +771,7 @@ Falso-Neg:  122363
 Taxa de Acertos: 0.4328350599086885
 
 
-Time Elapsed(s): 0:13:51.348462
+Time Elapsed(s): 0:00:43.577276
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122363
@@ -786,7 +786,7 @@ Falso-Neg:  5
 Taxa de Acertos: 0.9999212032723818
 
 
-Time Elapsed(s): 0:13:56.973733
+Time Elapsed(s): 0:00:45.564689
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122363
@@ -801,7 +801,7 @@ Falso-Neg:  9
 Taxa de Acertos: 0.9999165681707571
 
 
-Time Elapsed(s): 0:16:01.673071
+Time Elapsed(s): 0:02:20.496458
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122363
@@ -818,7 +818,7 @@ Taxa de Acertos: 0.4328350599086885
 
 Test: 2
 n_components: 49
-Time Elapsed(s): 0:04:24.244209
+Time Elapsed(s): 0:03:28.864763
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -833,7 +833,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5673410739530464
 
 
-Time Elapsed(s): 0:08:16.708457
+Time Elapsed(s): 0:03:30.372569
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -848,7 +848,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7765232102713852
 
 
-Time Elapsed(s): 0:12:43.298637
+Time Elapsed(s): 0:03:53.800038
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -863,7 +863,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5673410739530464
 
 
-Time Elapsed(s): 0:12:54.686706
+Time Elapsed(s): 0:00:51.738108
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -878,7 +878,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.9916753574822128
 
 
-Time Elapsed(s): 0:13:04.865640
+Time Elapsed(s): 0:00:48.707690
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -893,7 +893,7 @@ Falso-Neg:  51
 Taxa de Acertos: 0.9981181487404112
 
 
-Time Elapsed(s): 0:15:31.378957
+Time Elapsed(s): 0:02:33.326233
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -908,7 +908,7 @@ Falso-Neg:  122401
 Taxa de Acertos: 0.4326589260469536
 
 
-Time Elapsed(s): 0:15:34.151681
+Time Elapsed(s): 0:00:43.784332
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -923,7 +923,7 @@ Falso-Neg:  21
 Taxa de Acertos: 0.9998563118496373
 
 
-Time Elapsed(s): 0:15:38.487263
+Time Elapsed(s): 0:00:46.146582
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -938,7 +938,7 @@ Falso-Neg:  45
 Taxa de Acertos: 0.9997682449187698
 
 
-Time Elapsed(s): 0:18:07.715394
+Time Elapsed(s): 0:02:30.829386
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -954,7 +954,7 @@ Taxa de Acertos: 0.4326589260469536
 
 
 n_components: 35
-Time Elapsed(s): 0:04:25.527761
+Time Elapsed(s): 0:03:13.987556
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -969,7 +969,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5673410739530464
 
 
-Time Elapsed(s): 0:08:09.821141
+Time Elapsed(s): 0:03:29.093929
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -984,7 +984,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7765741963892558
 
 
-Time Elapsed(s): 0:12:30.969193
+Time Elapsed(s): 0:03:49.154325
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -999,7 +999,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5673410739530464
 
 
-Time Elapsed(s): 0:12:40.887379
+Time Elapsed(s): 0:00:51.247714
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -1014,7 +1014,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.9916197362627176
 
 
-Time Elapsed(s): 0:12:50.961654
+Time Elapsed(s): 0:00:50.983527
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -1029,7 +1029,7 @@ Falso-Neg:  61
 Taxa de Acertos: 0.9981042434355373
 
 
-Time Elapsed(s): 0:15:10.660637
+Time Elapsed(s): 0:02:29.063210
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -1044,7 +1044,7 @@ Falso-Neg:  122401
 Taxa de Acertos: 0.4326589260469536
 
 
-Time Elapsed(s): 0:15:11.798074
+Time Elapsed(s): 0:00:44.728626
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -1059,7 +1059,7 @@ Falso-Neg:  21
 Taxa de Acertos: 0.9998563118496373
 
 
-Time Elapsed(s): 0:15:16.835397
+Time Elapsed(s): 0:00:46.323978
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -1074,7 +1074,7 @@ Falso-Neg:  54
 Taxa de Acertos: 0.9997497045122714
 
 
-Time Elapsed(s): 0:17:36.688788
+Time Elapsed(s): 0:02:23.845884
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -1090,7 +1090,7 @@ Taxa de Acertos: 0.4326589260469536
 
 
 n_components: 21
-Time Elapsed(s): 0:04:17.080980
+Time Elapsed(s): 0:03:13.611182
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -1105,7 +1105,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5673410739530464
 
 
-Time Elapsed(s): 0:07:44.859040
+Time Elapsed(s): 0:03:24.463261
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -1120,7 +1120,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7781733064497439
 
 
-Time Elapsed(s): 0:11:52.561911
+Time Elapsed(s): 0:03:42.940024
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -1135,7 +1135,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5673410739530464
 
 
-Time Elapsed(s): 0:12:03.095545
+Time Elapsed(s): 0:00:50.252219
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -1150,7 +1150,7 @@ Falso-Neg:  20
 Taxa de Acertos: 0.9910357134580176
 
 
-Time Elapsed(s): 0:12:11.174985
+Time Elapsed(s): 0:00:48.708331
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -1165,7 +1165,7 @@ Falso-Neg:  62
 Taxa de Acertos: 0.9980347169111683
 
 
-Time Elapsed(s): 0:14:15.302282
+Time Elapsed(s): 0:02:14.085955
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -1180,7 +1180,7 @@ Falso-Neg:  122401
 Taxa de Acertos: 0.4326589260469536
 
 
-Time Elapsed(s): 0:14:17.034915
+Time Elapsed(s): 0:00:43.619268
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122401
@@ -1195,7 +1195,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.9997450694106468
 
 
-Time Elapsed(s): 0:14:19.834184
+Time Elapsed(s): 0:00:47.481935
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122401
@@ -1210,7 +1210,7 @@ Falso-Neg:  25
 Taxa de Acertos: 0.999847041646388
 
 
-Time Elapsed(s): 0:16:22.687393
+Time Elapsed(s): 0:02:11.377835
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122401
@@ -1227,7 +1227,7 @@ Taxa de Acertos: 0.4326589260469536
 
 Test: 3
 n_components: 49
-Time Elapsed(s): 0:04:34.989550
+Time Elapsed(s): 0:03:31.426113
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1242,7 +1242,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.567368884562794
 
 
-Time Elapsed(s): 0:08:20.247946
+Time Elapsed(s): 0:03:27.048526
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1257,7 +1257,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7763285360031519
 
 
-Time Elapsed(s): 0:12:46.667803
+Time Elapsed(s): 0:04:07.645142
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1272,7 +1272,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.567368884562794
 
 
-Time Elapsed(s): 0:12:57.988544
+Time Elapsed(s): 0:00:49.708210
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1287,7 +1287,7 @@ Falso-Neg:  18
 Taxa de Acertos: 0.9915316693318501
 
 
-Time Elapsed(s): 0:13:08.570939
+Time Elapsed(s): 0:00:49.488352
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1302,7 +1302,7 @@ Falso-Neg:  20
 Taxa de Acertos: 0.9979466499803008
 
 
-Time Elapsed(s): 0:15:36.617547
+Time Elapsed(s): 0:02:33.071142
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1317,7 +1317,7 @@ Falso-Neg:  122407
 Taxa de Acertos: 0.43263111543720595
 
 
-Time Elapsed(s): 0:15:39.760992
+Time Elapsed(s): 0:00:44.452996
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1332,7 +1332,7 @@ Falso-Neg:  5
 Taxa de Acertos: 0.9999397436788802
 
 
-Time Elapsed(s): 0:15:46.099180
+Time Elapsed(s): 0:00:47.900744
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1347,7 +1347,7 @@ Falso-Neg:  9
 Taxa de Acertos: 0.9999258383740064
 
 
-Time Elapsed(s): 0:18:19.944753
+Time Elapsed(s): 0:02:37.157438
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1363,7 +1363,7 @@ Taxa de Acertos: 0.43263111543720595
 
 
 n_components: 35
-Time Elapsed(s): 0:04:21.734688
+Time Elapsed(s): 0:03:19.963001
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1378,7 +1378,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.567368884562794
 
 
-Time Elapsed(s): 0:07:56.305059
+Time Elapsed(s): 0:03:21.557410
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1393,7 +1393,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7763517115112749
 
 
-Time Elapsed(s): 0:12:10.377516
+Time Elapsed(s): 0:03:43.658773
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1408,7 +1408,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.567368884562794
 
 
-Time Elapsed(s): 0:12:20.779309
+Time Elapsed(s): 0:00:50.062395
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1423,7 +1423,7 @@ Falso-Neg:  18
 Taxa de Acertos: 0.9915363044334747
 
 
-Time Elapsed(s): 0:12:30.698179
+Time Elapsed(s): 0:00:50.497054
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1438,7 +1438,7 @@ Falso-Neg:  22
 Taxa de Acertos: 0.9977380704071936
 
 
-Time Elapsed(s): 0:14:55.333950
+Time Elapsed(s): 0:02:25.381748
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1453,7 +1453,7 @@ Falso-Neg:  122407
 Taxa de Acertos: 0.43263111543720595
 
 
-Time Elapsed(s): 0:14:58.392663
+Time Elapsed(s): 0:00:45.083996
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1468,7 +1468,7 @@ Falso-Neg:  6
 Taxa de Acertos: 0.9999304734756309
 
 
-Time Elapsed(s): 0:15:02.841632
+Time Elapsed(s): 0:00:46.158196
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1483,7 +1483,7 @@ Falso-Neg:  9
 Taxa de Acertos: 0.9999258383740064
 
 
-Time Elapsed(s): 0:17:27.866860
+Time Elapsed(s): 0:02:27.335478
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1499,7 +1499,7 @@ Taxa de Acertos: 0.43263111543720595
 
 
 n_components: 21
-Time Elapsed(s): 0:04:16.766862
+Time Elapsed(s): 0:03:18.473517
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1514,7 +1514,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.567368884562794
 
 
-Time Elapsed(s): 0:07:44.313179
+Time Elapsed(s): 0:03:20.714742
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1529,7 +1529,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7780342534010058
 
 
-Time Elapsed(s): 0:11:51.690628
+Time Elapsed(s): 0:03:49.922348
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1544,7 +1544,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.567368884562794
 
 
-Time Elapsed(s): 0:12:02.261934
+Time Elapsed(s): 0:00:51.328878
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1559,22 +1559,22 @@ Falso-Neg:  19
 Taxa de Acertos: 0.991100604880762
 
 
-Time Elapsed(s): 0:12:14.800355
+Time Elapsed(s): 0:00:50.321913
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122407
 Quant. de Ataques - Training : 5620
 Quant. Ataques Total:  128027
-Acertos:  215248
-Verd-Pos:  122378
+Acertos:  215247
+Verd-Pos:  122377
 Verd-Neg:  92870
-Erros:  497
+Erros:  498
 Falso-Pos:  468
-Falso-Neg:  29
-Taxa de Acertos: 0.9976963544925722
+Falso-Neg:  30
+Taxa de Acertos: 0.9976917193909477
 
 
-Time Elapsed(s): 0:14:28.136960
+Time Elapsed(s): 0:02:16.746467
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1589,7 +1589,7 @@ Falso-Neg:  122407
 Taxa de Acertos: 0.43263111543720595
 
 
-Time Elapsed(s): 0:14:30.379282
+Time Elapsed(s): 0:00:44.902291
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122407
@@ -1604,7 +1604,7 @@ Falso-Neg:  12
 Taxa de Acertos: 0.9999119330691325
 
 
-Time Elapsed(s): 0:14:33.353246
+Time Elapsed(s): 0:00:45.379430
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122407
@@ -1619,7 +1619,7 @@ Falso-Neg:  18
 Taxa de Acertos: 0.9998794873577603
 
 
-Time Elapsed(s): 0:16:44.971814
+Time Elapsed(s): 0:02:14.099759
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122407
@@ -1636,7 +1636,7 @@ Taxa de Acertos: 0.43263111543720595
 
 Test: 4
 n_components: 49
-Time Elapsed(s): 0:04:29.824293
+Time Elapsed(s): 0:03:22.870157
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1651,7 +1651,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5670583327539457
 
 
-Time Elapsed(s): 0:08:15.547209
+Time Elapsed(s): 0:03:28.243889
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1666,7 +1666,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7732786391341631
 
 
-Time Elapsed(s): 0:12:47.041788
+Time Elapsed(s): 0:03:49.731668
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1681,7 +1681,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5670583327539457
 
 
-Time Elapsed(s): 0:12:59.361871
+Time Elapsed(s): 0:00:49.456354
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1696,7 +1696,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9903867992305732
 
 
-Time Elapsed(s): 0:13:09.697009
+Time Elapsed(s): 0:00:49.335707
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1711,7 +1711,7 @@ Falso-Neg:  47
 Taxa de Acertos: 0.9949106584161858
 
 
-Time Elapsed(s): 0:15:39.673754
+Time Elapsed(s): 0:02:30.958487
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1726,7 +1726,7 @@ Falso-Neg:  78298
 Taxa de Acertos: 0.637080812996825
 
 
-Time Elapsed(s): 0:15:41.018183
+Time Elapsed(s): 0:00:43.915854
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1741,7 +1741,7 @@ Falso-Neg:  35
 Taxa de Acertos: 0.9998006906301421
 
 
-Time Elapsed(s): 0:15:49.442341
+Time Elapsed(s): 0:00:46.648397
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1756,7 +1756,7 @@ Falso-Neg:  34
 Taxa de Acertos: 0.9998053257317666
 
 
-Time Elapsed(s): 0:18:18.754622
+Time Elapsed(s): 0:02:32.745917
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1772,7 +1772,7 @@ Taxa de Acertos: 0.637080812996825
 
 
 n_components: 35
-Time Elapsed(s): 0:04:20.076499
+Time Elapsed(s): 0:03:22.821055
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1787,7 +1787,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5670583327539457
 
 
-Time Elapsed(s): 0:07:55.629904
+Time Elapsed(s): 0:03:20.452171
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1802,7 +1802,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7736818929755035
 
 
-Time Elapsed(s): 0:12:18.689825
+Time Elapsed(s): 0:03:51.795503
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1817,7 +1817,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5670583327539457
 
 
-Time Elapsed(s): 0:12:29.486140
+Time Elapsed(s): 0:00:49.126928
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1832,7 +1832,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9903775290273239
 
 
-Time Elapsed(s): 0:12:43.824116
+Time Elapsed(s): 0:00:50.835157
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1847,7 +1847,7 @@ Falso-Neg:  45
 Taxa de Acertos: 0.9948411318918168
 
 
-Time Elapsed(s): 0:15:05.442263
+Time Elapsed(s): 0:02:25.418647
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1862,7 +1862,7 @@ Falso-Neg:  78135
 Taxa de Acertos: 0.6378363345616352
 
 
-Time Elapsed(s): 0:15:06.738859
+Time Elapsed(s): 0:00:43.966030
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1877,7 +1877,7 @@ Falso-Neg:  31
 Taxa de Acertos: 0.9998145959350159
 
 
-Time Elapsed(s): 0:15:14.428770
+Time Elapsed(s): 0:00:47.998410
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1892,7 +1892,7 @@ Falso-Neg:  34
 Taxa de Acertos: 0.9998006906301421
 
 
-Time Elapsed(s): 0:17:35.841489
+Time Elapsed(s): 0:02:23.627819
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1908,7 +1908,7 @@ Taxa de Acertos: 0.6378363345616352
 
 
 n_components: 21
-Time Elapsed(s): 0:04:18.915826
+Time Elapsed(s): 0:03:38.154053
 C: 0.001
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1923,7 +1923,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5670583327539457
 
 
-Time Elapsed(s): 0:07:47.212708
+Time Elapsed(s): 0:03:27.523740
 C: 0.001
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1938,7 +1938,7 @@ Falso-Neg:  3
 Taxa de Acertos: 0.7769032886046027
 
 
-Time Elapsed(s): 0:12:06.900090
+Time Elapsed(s): 0:04:03.677321
 C: 0.001
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1953,7 +1953,7 @@ Falso-Neg:  0
 Taxa de Acertos: 0.5670583327539457
 
 
-Time Elapsed(s): 0:12:18.999375
+Time Elapsed(s): 0:00:52.030458
 C: 1
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -1968,7 +1968,7 @@ Falso-Neg:  17
 Taxa de Acertos: 0.9899464645762358
 
 
-Time Elapsed(s): 0:12:30.016840
+Time Elapsed(s): 0:00:50.704297
 C: 1
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -1983,7 +1983,7 @@ Falso-Neg:  19
 Taxa de Acertos: 0.9949060233145611
 
 
-Time Elapsed(s): 0:14:43.752955
+Time Elapsed(s): 0:02:31.855502
 C: 1
 Gamma: 100
 Quant. de Ataques - Teste : 122340
@@ -1998,7 +1998,7 @@ Falso-Neg:  77402
 Taxa de Acertos: 0.6412338640524694
 
 
-Time Elapsed(s): 0:14:45.094708
+Time Elapsed(s): 0:00:44.291010
 C: 1000
 Gamma: 0.1
 Quant. de Ataques - Teste : 122340
@@ -2013,7 +2013,7 @@ Falso-Neg:  10
 Taxa de Acertos: 0.9997682449187698
 
 
-Time Elapsed(s): 0:14:47.042315
+Time Elapsed(s): 0:00:45.372176
 C: 1000
 Gamma: 1
 Quant. de Ataques - Teste : 122340
@@ -2028,7 +2028,7 @@ Falso-Neg:  6
 Taxa de Acertos: 0.9998980277642587
 
 
-Time Elapsed(s): 0:16:58.601808
+Time Elapsed(s): 0:02:32.142193
 C: 1000
 Gamma: 100
 Quant. de Ataques - Teste : 122340

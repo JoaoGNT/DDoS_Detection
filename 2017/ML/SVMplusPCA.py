@@ -53,19 +53,19 @@ for n in range(0,randomlist.nTest):
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
-        begining_training = datetime.now()
+        begining_transform = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
-        end_training = datetime.now()
+        end_transform = datetime.now()
         for l in range(0,len(C)):
-
+            begining_training = datetime.now()
             clf = svm.SVC(C=C[l],kernel='linear',random_state=1,class_weight={0:1,1:3})
             clf.fit(tra, traininglabels[n])
             results = clf.predict(tst)
-
+            end_training = datetime.now()
 
             counter = 0
             c = 0
@@ -100,7 +100,8 @@ for n in range(0,randomlist.nTest):
                     counter2 = counter2 + 1
 
             time2training = end_training - begining_training
-            print('Time Elapsed(s):', (time2process + time2training))
+            time2tranform = end_transform - begining_transform
+            print('Time Elapsed(s):', (time2process + time2training + time2tranform))
             print('C:', C[l])
             print("Quant. de Ataques - Teste :", c)
             print("Quant. de Ataques - Training :", counter2)
@@ -112,7 +113,7 @@ for n in range(0,randomlist.nTest):
             print("Falso-Pos: ", falso_positivo)
             print("Falso-Neg: ", falso_negativo)
             print("Taxa de Acertos:", counter / len(results), "\n\n")
-'''
+
 ### --- End Linear
 
     ## ------------ RBF
@@ -124,20 +125,20 @@ for n in range(0,randomlist.nTest):
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
-        begining_training = datetime.now()
+        begining_transform = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
-        end_training = datetime.now()
+        end_transform = datetime.now()
         for l in range(0,len(C)):
             for g in range(0,len(gamma)):
-
+                begining_training = datetime.now()
                 clf = svm.SVC(C=C[l],kernel='rbf',random_state=1,class_weight={0:1,1:3},gamma=gamma[g])
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
-
+                end_training = datetime.now()
 
                 counter = 0
                 c = 0
@@ -172,7 +173,8 @@ for n in range(0,randomlist.nTest):
                         counter2 = counter2 + 1
 
                 time2training = end_training - begining_training
-                print('Time Elapsed(s):', (time2process + time2training))
+                time2tranform = end_transform - begining_transform
+                print('Time Elapsed(s):', (time2process + time2training + time2tranform))
                 print('C:', C[l])
                 print('Gamma:', gamma[g])
                 print("Quant. de Ataques - Teste :", c)
@@ -186,8 +188,8 @@ for n in range(0,randomlist.nTest):
                 print("Falso-Neg: ", falso_negativo)
                 print("Taxa de Acertos:", counter / len(results), "\n\n")
 
-### --- End Linear
-
+### --- End RBF
+'''
 ## ------------ Poly
 print('Poly')
 for n in range(0,randomlist.nTest):
@@ -197,20 +199,20 @@ for n in range(0,randomlist.nTest):
     tra = min_max_scaler.fit_transform(training[n])
     tst = min_max_scaler.fit_transform(test[n])
     for c in range(0, len(components)):
-        begining_training = datetime.now()
+        begining_transform = datetime.now()
         print('n_components:',components[c])
         pca=PCA(n_components=components[c])
         pca.fit(tra)
         tra = pca.transform(tra)
         tst = pca.transform(tst)
-        end_training = datetime.now()
+        end_transform = datetime.now()
         for l in range(0,len(C)):
             for d in range(0,len(degree)):
-
+                begining_training = datetime.now()
                 clf = svm.SVC(C=C[l],kernel='poly',random_state=1,class_weight={0:1,1:3},degree=degree[d])
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
-
+                end_training = datetime.now()
 
                 counter = 0
                 c = 0
@@ -245,7 +247,8 @@ for n in range(0,randomlist.nTest):
                         counter2 = counter2 + 1
 
                 time2training = end_training - begining_training
-                print('Time Elapsed(s):', (time2process + time2training))
+                time2tranform = end_transform - begining_transform
+                print('Time Elapsed(s):', (time2process + time2training + time2tranform))
                 print('C:', C[l])
                 print('Degree:', degree[d])
                 print("Quant. de Ataques - Teste :", c)

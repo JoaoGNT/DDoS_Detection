@@ -14,6 +14,7 @@ import statsmodels.api as sm
 import math
 import matplotlib.pyplot as plt
 import label
+#from datetime import datetime
 
 #-------------------------------- STEP 1 -----------------------------------------#
 ''' Scope
@@ -39,8 +40,7 @@ print(len(avgVec))
 wSize = 5  # window size
 delta = 1  # sliding window delta
 dateVec = []  # x axis
-twindow = csvReader.dateVector[0] + datetime.timedelta(
-    minutes=wSize)  # 1st date in csv + 5min = the end of the first window
+twindow = csvReader.dateVector[0] + datetime.timedelta(minutes=wSize)  # 1st date in csv + 5min = the end of the first window
 dateVec.append(twindow)  # appending the first date window value
 for s in range(0, len(fwdPktEntropy.minuteVecWindow) - 6):
     twindow = twindow + datetime.timedelta(minutes=delta)
@@ -78,7 +78,9 @@ vecfalso_negativo = []
 vecverd_negativo = []
 vectaxa_acerto = []
 order = []
+time = []
 for mod in range(0, len(model_order)):
+    start_time = datetime.datetime.now()
     model = sm.tsa.arima.ARIMA(arimaData, order=model_order[mod])
     res = model.fit()  # fitting the model
     forecast = res.forecast(steps=step)  # forecasting
@@ -92,7 +94,7 @@ for mod in range(0, len(model_order)):
     errorVector = []
     tshVecup = []  # vector with the up thresholds
     tshVecdown = []  # vector with the down thresholds
-
+    end_time = datetime.datetime.now()
     for r in range(0, len(forecast)):
         error = dataFrame.loc[dateVec[r + step]] - forecast[r]  # error = the real value - forecast for that value
         errorVector.append(error)  # composing the vector with errors
@@ -163,6 +165,7 @@ for mod in range(0, len(model_order)):
     acertos = acertos_normal + acertos_atack
     erros = erros_atack + erros_normal
     taxa_acerto = (acertos_normal + acertos_atack) * 100 / (acertos_normal + acertos_atack + erros_atack + erros_normal)
+    time.append(end_time-start_time)
     vecacertos.append(acertos)
     vecerros.append(erros)
     vecverd_positivo.append(acertos_atack)
@@ -190,7 +193,7 @@ for mod in range(0, len(model_order)):
 
 d = {'Order': model_order, 'Acertos': vecacertos, 'Erros': vecerros, 'Verdadeiro_Positivo': vecverd_positivo,
       'Verdadeiro_Negativo': vecverd_negativo, 'Falso_Positivo':vecfalso_positivo, 'Falso_Negativo':vecfalso_negativo,
-     'Taxa de Acerto': vectaxa_acerto}
+     'Taxa de Acerto': vectaxa_acerto,'Time':time}
 dataf = pd.DataFrame(d)
 print(dataf)
 
