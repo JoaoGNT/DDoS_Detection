@@ -47,7 +47,7 @@ for n in range(0,randomlist.nTest):
         begining_training = datetime.now()
         min_max_scaler = preprocessing.MinMaxScaler()
         tra = min_max_scaler.fit_transform(training[n])
-        clf = svm.SVC(C=C[l],kernel='linear',random_state=1,class_weight={0:1,1:3})
+        clf = svm.SVC(C=C[l],kernel='linear',random_state=1)
         clf.fit(tra, traininglabels[n])
 
         results = clf.predict(test[n])
@@ -110,7 +110,7 @@ for n in range(0,randomlist.nTest):
             begining_training = datetime.now()
             min_max_scaler = preprocessing.MinMaxScaler()
             tra = min_max_scaler.fit_transform(training[n])
-            clf = svm.SVC(C=C[l],kernel='rbf',random_state=1,class_weight={0:1,1:3},gamma=gamma[g])
+            clf = svm.SVC(C=C[l],kernel='rbf',random_state=1,gamma=gamma[g])
             clf.fit(tra, traininglabels[n])
 
             results = clf.predict(test[n])
@@ -174,7 +174,7 @@ for n in range(0,randomlist.nTest):
             begining_training = datetime.now()
             min_max_scaler = preprocessing.MinMaxScaler()
             tra = min_max_scaler.fit_transform(training[n])
-            clf = svm.SVC(C=C[l],kernel='poly',random_state=1,class_weight={0:1,1:3},degree=degree[d])
+            clf = svm.SVC(C=C[l],kernel='poly',random_state=1,degree=degree[d])
             clf.fit(tra, traininglabels[n])
             results = clf.predict(test[n])
             end_training = datetime.now()

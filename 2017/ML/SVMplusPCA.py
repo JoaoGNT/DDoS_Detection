@@ -42,7 +42,7 @@ degree = [2,3,4]
 gamma = [10 ** (-1), 1, 10 ** (2)]
 #components = 70
 components = [49, 35, 21]
-'''
+
 ## ------------ LINEAR
 print('LINEAR')
 
@@ -62,7 +62,7 @@ for n in range(0,randomlist.nTest):
         end_transform = datetime.now()
         for l in range(0,len(C)):
             begining_training = datetime.now()
-            clf = svm.SVC(C=C[l],kernel='linear',random_state=1,class_weight={0:1,1:3})
+            clf = svm.SVC(C=C[l],kernel='linear',random_state=1)
             clf.fit(tra, traininglabels[n])
             results = clf.predict(tst)
             end_training = datetime.now()
@@ -135,7 +135,7 @@ for n in range(0,randomlist.nTest):
         for l in range(0,len(C)):
             for g in range(0,len(gamma)):
                 begining_training = datetime.now()
-                clf = svm.SVC(C=C[l],kernel='rbf',random_state=1,class_weight={0:1,1:3},gamma=gamma[g])
+                clf = svm.SVC(C=C[l],kernel='rbf',random_state=1,gamma=gamma[g])
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
                 end_training = datetime.now()
@@ -189,7 +189,7 @@ for n in range(0,randomlist.nTest):
                 print("Taxa de Acertos:", counter / len(results), "\n\n")
 
 ### --- End RBF
-'''
+
 ## ------------ Poly
 print('Poly')
 for n in range(0,randomlist.nTest):
@@ -209,7 +209,7 @@ for n in range(0,randomlist.nTest):
         for l in range(0,len(C)):
             for d in range(0,len(degree)):
                 begining_training = datetime.now()
-                clf = svm.SVC(C=C[l],kernel='poly',random_state=1,class_weight={0:1,1:3},degree=degree[d])
+                clf = svm.SVC(C=C[l],kernel='poly',random_state=1,degree=degree[d])
                 clf.fit(tra, traininglabels[n])
                 results = clf.predict(tst)
                 end_training = datetime.now()
