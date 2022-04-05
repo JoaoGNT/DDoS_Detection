@@ -85,7 +85,7 @@ for mod in range(0, len(model_order)):
     res = model.fit()  # fitting the model
     forecast = res.forecast(steps=step)  # forecasting
     # -------------------------------- END STEP 3 -----------------------------------------#
-
+    print(forecast)
     # -------------------------------- STEP 3 -----------------------------------------#
     ''' Scope
         * establishing thresholds -- up and down
